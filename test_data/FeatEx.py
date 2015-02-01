@@ -51,6 +51,10 @@ class FeatureExtraction(object):
      
 if __name__ == '__main__':
     fe = FeatureExtraction()
+    fe.read_origin_train('train.gold')
+    fe.feature_extraction()
+    fe.output_feat('zzh_train.gold')
+    fe = FeatureExtraction()
     fe.read_origin_train('dev.gold')
     fe.feature_extraction()
     fe.output_feat('zzh_test.gold')
