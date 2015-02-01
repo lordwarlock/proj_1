@@ -1,4 +1,5 @@
 import re
+import nltk
 class FeatureExtraction(object):
     def __init__(self):
         self.data = []
