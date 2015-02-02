@@ -39,10 +39,14 @@ class FeatureExtraction(object):
 
     def output_feat(self,filename):
         with open(filename,'w') as output_file:
+            flag = 1
             for line in self.feat:
                 i = 0
                 for feat in line:
                     i += 1
+                    if flag : flag = 0
+                    else:
+                        if (i == 1 and feat == '0'): output_file.write('\n')
                     output_file.write(str(feat))
                     if (i != self.feat_length):
                         output_file.write('\t')

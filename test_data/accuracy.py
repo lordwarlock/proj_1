@@ -17,7 +17,8 @@ def accuracy(gold_filename,rslt_filename):
             if (gold[i] == result[i]):
                 correct_g += 1
             else:
-                print gold[i],result[i]
+                #print gold[i],result[i]
+                pass
 
     print correct_g
     print total_BI_g

@@ -25,7 +25,7 @@ def feat_cap_period(data):
             per_flag = 1
     return cap_flag*per_flag
 def get_feature_functions_list():
-    return [first_cap,first_word,first_name,last_name]
+    return [feat_first_cap,feat_first_word,first_name,last_name]
 
 def csv_extract(file,column=0,func=lambda x:str.upper(x),separator='\s+'):
     result=set()
