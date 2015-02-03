@@ -30,10 +30,10 @@ class FeatureExtraction(object):
             self.feat_length += len(feat_func_list)
             for line in self.data:
                 if self.raw_flag:
-                    self.feat.append(  list(line[:-1])\
+                    self.feat.append(  [line[0],line[1].upper(),line[2]]\
                                      + [func(line) for func in feat_func_list])
                 else:
-                    self.feat.append(  list(line[:-1])\
+                    self.feat.append(  [line[0],line[1].upper(),line[2]]\
                                      + [func(line) for func in feat_func_list]
                                      + [line[-1]])            
 
