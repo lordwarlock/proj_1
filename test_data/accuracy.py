@@ -1,3 +1,20 @@
+def recall(gold,result):
+    correct_g = 0.0
+    total_BI_g = 0.0
+    for i in range(len(gold)):
+        if (gold[i] != 'O\n'):
+            #if (gold[i][0] == 'I' or result[i][0] == 'I'): continue
+            total_BI_g += 1
+            if (gold[i] == result[i]):
+                correct_g += 1
+            else:
+                #print gold[i][:-1],result[i][:-1]
+                pass
+    print correct_g
+    print total_BI_g
+    print 'recall:',correct_g/total_BI_g
+    return correct_g/total_BI_g
+
 def accuracy(gold_filename,rslt_filename):
     err_file = open('zzh_test.err','w')
     gold_file = open(gold_filename,'r')
@@ -20,37 +37,11 @@ def accuracy(gold_filename,rslt_filename):
         if (line == '\n'): continue
         data = line.split('\t')
         result.append( data[-1] )
-    correct_g = 0.0
-    total_BI_g = 0.0
-    for i in range(len(gold)):
-        if (gold[i] != 'O\n'):
-            #if (gold[i][0] == 'I' or result[i][0] == 'I'): continue
-            total_BI_g += 1
-            if (gold[i] == result[i]):
-                correct_g += 1
-            else:
-                #print gold[i][:-1],result[i][:-1]
-                pass
-    print correct_g
-    print total_BI_g
-    print 'recall:',correct_g/total_BI_g
 
-    correct_g = 0.0
-    total_BI_g = 0.0
-    for i in range(len(gold)):
-        if (result[i] != 'O\n'):
-            #if (gold[i][0] == 'I' or result[i][0] == 'I'): continue
-            total_BI_g += 1
-            if (gold[i] == result[i]):
-                correct_g += 1
-            else:
-                #print gold[i][:-1],result[i][:-1]
-                pass
 
-    print correct_g
-    print total_BI_g
-    print 'precision:',correct_g/total_BI_g
-
+    r_score = recall(gold,result)
+    p_score = recall(result,gold)
+    print 'f-score', 2*r_score*p_score/(r_score+p_score)
     correct_g = 0.0
     total_BI_g = 0.0
 

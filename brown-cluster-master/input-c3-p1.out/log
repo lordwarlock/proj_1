@@ -1,0 +1,57 @@
+main: ./wcluster --text input.txt --c 3 {
+  Tue Feb  3 14:47:10 2015 on ZhihaoZhengdeMacBook-Pro.local (0MHz)
+  read_text() {
+    read_text(): input.txt {
+      Reading from input.txt [0s, cumulative 0s]
+      StrDB::write(): input.txt.strdb [0s, cumulative 0s]
+    } [0s, cumulative 0s]
+    Counting phrases {
+      5 distinct phrases of length 1, keeping 5 which occur at least 1 times
+    } [0s, cumulative 0s]
+    Finding left/right phrases [0s, cumulative 0s]
+    Text length: 15, 5 phrases, 5 words
+  } [0s, cumulative 0.001s]
+  create_initial_clusters() {
+    Sorting 5 phrases by frequency
+    Selecting top 3 phrases to be initial clusters
+  } [0s, cumulative 0.001s]
+  Writing to input-c3-p1.out/collocs
+  do_clustering() {
+    compute_L2() {
+      Computing L2 [0s, cumulative 0s]
+    } [0s, cumulative 0s]
+    Stage 1 {
+      report_mem_usage() [0s, cumulative 0s]
+      Merging phrase: 3/5: 1(mouse) [0s, cumulative 0s]
+      Merging phrase: 4/5: 2(cat) [0s, cumulative 0s]
+    } [0s, cumulative 0s]
+    compute_cluster_distribs() [0s, cumulative 0s]
+    Stage 2 {
+      report_mem_usage() [0s, cumulative 0s]
+      Clustering: 0/2 [0s, cumulative 0s]
+      Clustering: 1/2 [0s, cumulative 0s]
+    } [0s, cumulative 0s]
+    Done: 1 cluster left: mutual info = -3.88578e-16
+    report_mem_usage() {
+      DoubleVecVec L2: 320 (0.180485)
+      DoubleVecVec q2: 320 (0.180485)
+      DoubleVecVec p2: 320 (0.180485)
+      IntMat left_phrases: 176 (0.0992668)
+      IntMat right_phrases: 176 (0.0992668)
+      IntIntPairMap cluster_tree: 100 (0.0564016)
+      IntMat phrases: 68 (0.0383531)
+      StrDB db: 65 (0.036661)
+      DoubleVec p1: 40 (0.0225606)
+      IntIntMap cluster2slot: 36 (0.0203046)
+      IntIntMap cluster2rep: 36 (0.0203046)
+      IntIntMap rep2cluster: 36 (0.0203046)
+      IntVec slot2cluster: 20 (0.0112803)
+      IntVec freq_order_phrases: 20 (0.0112803)
+      IntVec phrase_freqs: 20 (0.0112803)
+      UnionSet phrase2rep: 20 (0.0112803)
+      Total: 1K
+    } [0s, cumulative 0s]
+  } [0s, cumulative 0.002s]
+  Writing cluster paths to input-c3-p1.out/paths
+  Writing cluster map to input-c3-p1.out/map
+} [0.002s]
