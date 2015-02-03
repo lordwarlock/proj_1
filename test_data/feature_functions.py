@@ -25,8 +25,9 @@ def feat_cap_period(data):
             per_flag = 1
     return cap_flag*per_flag
 def get_feature_functions_list():
-    return [feat_first_cap,feat_first_word,first_name,last_name,org_name,loc_name,misc_name,\
-            feat_cap_period,no_lower_case]
+    return [up_case,feat_first_cap,feat_first_word,first_name,last_name,\
+            org_name,loc_name,misc_name,\
+            feat_cap_period,per_name,no_lower_case]
 
 def csv_extract(file,column=0,func=lambda x:str.upper(x),separator='\s+'):
     result=set()
@@ -49,9 +50,15 @@ def ned_extract(file,offset=4,func=lambda x:str.upper(x),separator='\s+'):
 
 last_name_list=csv_extract('dist.all.last')
 first_name_list=csv_extract('dist.male.first').union(csv_extract('dist.female.first'))
+per_name_list = last_name_list.union(first_name_list)
 org_name_list = ned_extract('ned.list.ORG',1)
 loc_name_list = ned_extract('ned.list.LOC',1)
 misc_name_list = ned_extract('ned.list.MISC',1)
+
+
+def per_name(data):
+    no, word, pos_tag, ne_tag = data
+    return str.upper(word) in per_name_list
 
 def first_name(data):
     no, word, pos_tag, ne_tag = data
@@ -79,3 +86,7 @@ def no_lower_case(data):
     for char in word:
         if (word <= 'z' and word >= 'a'): flag = 0
     return flag
+
+def up_case(data):
+    no, word, pos_tag, ne_tag = data
+    return word.upper()

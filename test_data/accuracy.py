@@ -23,8 +23,23 @@ def accuracy(gold_filename,rslt_filename):
     correct_g = 0.0
     total_BI_g = 0.0
     for i in range(len(gold)):
-        if (gold[i] != 'O\n' or result[i] != 'O\n'):
-            if (gold[i][0] == 'I' or result[i][0] == 'I'): continue
+        if (gold[i] != 'O\n'):
+            #if (gold[i][0] == 'I' or result[i][0] == 'I'): continue
+            total_BI_g += 1
+            if (gold[i] == result[i]):
+                correct_g += 1
+            else:
+                #print gold[i][:-1],result[i][:-1]
+                pass
+    print correct_g
+    print total_BI_g
+    print 'recall:',correct_g/total_BI_g
+
+    correct_g = 0.0
+    total_BI_g = 0.0
+    for i in range(len(gold)):
+        if (result[i] != 'O\n'):
+            #if (gold[i][0] == 'I' or result[i][0] == 'I'): continue
             total_BI_g += 1
             if (gold[i] == result[i]):
                 correct_g += 1
@@ -34,14 +49,14 @@ def accuracy(gold_filename,rslt_filename):
 
     print correct_g
     print total_BI_g
-    print correct_g/total_BI_g
+    print 'precision:',correct_g/total_BI_g
 
     correct_g = 0.0
     total_BI_g = 0.0
 
     for i in range(len(gold)):
         if (gold[i] != 'O\n' and result[i]=='O\n'):
-            if (gold[i][0] == 'I' or result[i][0] == 'I'): continue
+            #if (gold[i][0] == 'I' or result[i][0] == 'I'): continue
             total_BI_g += 1
             if (gold[i] == result[i]):
                 correct_g += 1
@@ -58,7 +73,7 @@ def accuracy(gold_filename,rslt_filename):
     total_BI_g = 0.0
     for i in range(len(gold)):
         if (gold[i]=='O\n' and result[i] != 'O\n'):
-            if (gold[i][0] == 'I' or result[i][0] == 'I'): continue
+            #if (gold[i][0] == 'I' or result[i][0] == 'I'): continue
             total_BI_g += 1
             if (gold[i] == result[i]):
                 correct_g += 1
