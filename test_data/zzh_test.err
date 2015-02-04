@@ -1,4 +1,4 @@
-why Gore needed
+Judge N. Sanders
 B-PER O
 : Bush ;
 B-PER O
@@ -6,12 +6,10 @@ letting GE help
 B-ORG O
 . GE posts
 B-ORG O
-. GE will
-B-ORG O
-, Mich .
-B-GPE O
 between Florida and
 B-GPE O
+both Stremlow and
+B-PER O
 's Board of
 B-ORG O
 Board of Trustees
@@ -24,10 +22,6 @@ Gibson's Hardware Store
 I-ORG O
 Hardware Store ,
 I-ORG O
-.'' Fife Lake
-B-GPE O
-Fife Lake came
-I-GPE O
 the Sugar Bowl
 B-ORG O
 Sugar Bowl Restaurant
@@ -40,22 +34,14 @@ board of canvassers
 I-ORG O
 of canvassers ,
 I-ORG O
-. Gresser entered
-B-PER O
 the U.S. Chess
 B-ORG O
+U.S. Chess Hall
+I-ORG O
+Chess Hall of
+I-ORG O
 Hall of Fame
 I-ORG O
-. Gresser studied
-B-PER O
-the Kansas City
-B-ORG O
-Kansas City Royals
-I-ORG O
-City Royals .
-I-ORG O
-the Royals .
-B-ORG O
 for Kansas City
 B-ORG O
 Kansas City .
@@ -66,18 +52,16 @@ and Baltimore Orioles
 B-ORG O
 Baltimore Orioles are
 I-ORG O
-from Creditcards.com ,
-B-ORG O
 by Cnet.com .
 B-ORG O
+site Premier Solutions
+B-ORG O
+Premier Solutions ,
+I-ORG O
 Rock the Vote
 I-ORG O
 the Vote ,
 I-ORG O
-replacing Garth Ancier
-B-PER O
-Garth Ancier ,
-I-PER O
 replace Zucker at
 B-PER O
 `` Today ,''
@@ -90,30 +74,34 @@ B-ORG O
 B-ORG O
 `` Today .''
 B-ORG O
-.'' Ancier was
-B-PER O
-. Ancier had
-B-PER O
-. Ancier was
-B-PER O
-. Wright questioned
-B-PER O
-. Ancier had
-B-PER O
 ; BOSTON _
+B-GPE O
+; ROME _
 B-GPE O
 the Vatican with
 B-FAC O
 of Carinthia spoke
 B-GPE O
+across St. Peter's
+B-FAC O
+St. Peter's Square
+I-FAC O
+Peter's Square to
+I-FAC O
 the Vatican from
 B-FAC O
+`` Haider ?
+B-PER O
 in Venice earlier
 B-GPE O
 the South might
 B-LOC O
-into Burbank or
+use Westchester County
 B-FAC O
+Westchester County Airport
+I-FAC O
+County Airport instead
+I-FAC O
 : Aviation Consumer
 B-ORG O
 Aviation Consumer Protection
@@ -138,22 +126,20 @@ St. S.W. Washington
 I-LOC O
 conglomerate LVMH -
 B-ORG O
-Karan International for
-I-ORG O
-like Fendi were
-B-ORG O
-, LVMH purchased
-B-ORG O
 if LVMH enters
-B-ORG O
-acquire DKI within
 B-ORG O
 -based LVMH ,
 B-ORG O
+think LVMH is
+B-ORG O
+Since Donna Karan
+B-ORG O
+Donna Karan International
+I-ORG O
+Karan International went
+I-ORG O
 to Idol if
 B-PER O
-Karan International and
-I-ORG O
 and Gabrielle merge
 B-ORG O
 with Gabrielle studio
@@ -162,25 +148,17 @@ Gabrielle studio ,
 I-ORG O
 Karan International paid
 I-ORG O
-If LVMH succeeds
-B-ORG O
-Karan International and
-I-ORG O
 the U.S. ''
 B-GPE O
+'' Donna Karan
+B-ORG O
+Donna Karan International
+I-ORG O
 Karan International gets
 I-ORG O
 ; TORONTO _
 B-GPE O
-Although C.I. Fund
-B-ORG O
-C.I. Fund 's
-I-ORG O
-. C.I. Fund
-B-ORG O
-C.I. Fund was
-I-ORG O
-. AIC agreed
+, C.I. Fund
 B-ORG O
 powerful Caisse de
 B-ORG O
@@ -194,22 +172,8 @@ et Placement du
 I-ORG O
 Placement du Quebec
 I-ORG O
-, C.I. Fund
-B-ORG O
-C.I. Fund requested
-I-ORG O
 for MacKenzie along
 B-ORG O
-the Caisse de
-B-ORG O
-Caisse de Depot
-I-ORG O
-de Depot .
-I-ORG O
-, C.I. Fund
-B-ORG O
-C.I. Fund withdrew
-I-ORG O
 by Amvescap PLC
 B-ORG O
 Amvescap PLC of
@@ -220,13 +184,15 @@ the Organization of
 B-ORG O
 Organization of American
 I-ORG O
+of American States
+I-ORG O
+American States monitor
+I-ORG O
 press Aristide after
 B-PER O
 or Ali ,
 B-PER O
 the Penguins Wednesday
-B-ORG O
-the NHL into
 B-ORG O
 the Penguins falter
 B-ORG O
@@ -236,12 +202,10 @@ expansion Blue Jackets
 B-ORG O
 about Mario ?''
 B-PER O
-the Electoral College
-B-PER O
-Electoral College sealed
-I-PER O
-the Committee for
-B-ORG O
+the Northern Hemisphere
+B-LOC O
+Northern Hemisphere ,
+I-LOC O
 Committee for the
 I-ORG O
 for the Study
@@ -252,31 +216,21 @@ Study of the
 I-ORG O
 of the American
 I-ORG O
-the American Electorate
-I-ORG O
-American Electorate ,
-I-ORG O
-the White House
-B-PER O
-White House because
-I-PER O
 a Washington, D.C.
 B-GPE O
 Washington, D.C. ,
 I-GPE O
+in Congress .
+B-ORG O
+. Gore won
+B-PER O
 won New York
 B-GPE O
 New York state
 I-GPE O
-; SEATTLE _
-B-GPE O
 of American Zoo
 B-ORG O
 American Zoo and
 I-ORG O
 Zoo and Aquarium
-I-ORG O
-the Oregon Zoo
-B-ORG O
-Oregon Zoo in
 I-ORG O

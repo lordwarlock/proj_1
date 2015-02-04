@@ -12,7 +12,7 @@ def recall(gold,result,note):
                 pass
     print correct_g
     print total_BI_g
-    print mode,correct_g/total_BI_g
+    print note,correct_g/total_BI_g
     return correct_g/total_BI_g
 
 def accuracy(gold_filename,rslt_filename):

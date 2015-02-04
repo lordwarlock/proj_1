@@ -71,9 +71,9 @@
 
 0	_	``	_	0	1	False	False	False	False	False	0	False	1	001110011	O
 1	The	DT	THE	1	0	False	False	True	True	True	0	False	1	001010	O
-2	Florida	NNP	FLORIDA	1	0	True	True	False	True	False	0	True	1	11110	O
-3	Supreme	NNP	SUPREME	1	0	False	False	False	False	False	0	False	1	11101	O
-4	Court	NNP	COURT	1	0	False	True	False	False	False	0	True	1	10111	O
+2	Florida	NNP	FLORIDA	1	0	True	True	False	True	False	0	True	1	11110	B-ORG
+3	Supreme	NNP	SUPREME	1	0	False	False	False	False	False	0	False	1	11101	I-ORG
+4	Court	NNP	COURT	1	0	False	True	False	False	False	0	True	1	10111	I-ORG
 5	rejected	VBD	REJECTED	0	0	False	False	False	False	False	0	False	0	10011110	O
 6	an	DT	AN	0	0	True	True	False	False	False	0	True	0	110110	O
 7	appeal	NN	APPEAL	0	0	False	False	False	False	False	0	False	0	011100	O
@@ -183,11 +183,11 @@
 17	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
 
 0	Judge	NNP	JUDGE	1	1	False	True	False	False	False	0	True	1	001110000	O
-1	N.	NNP	N.	1	0	False	False	False	False	False	1	False	1	0011100010	B-ORG
-2	Sanders	NNPS	SANDERS	1	0	False	True	False	False	False	0	True	1	0011100011	I-ORG
-3	Sauls	NNP	SAULS	1	0	False	True	False	False	False	0	True	1	011111010	I-ORG
-4	of	IN	OF	0	0	False	False	True	True	True	0	False	0	01000	I-ORG
-5	Leon	NNP	LEON	1	0	True	True	False	False	False	0	True	1	11100	I-ORG
+1	N.	NNP	N.	1	0	False	False	False	False	False	1	False	1	0011100010	O
+2	Sanders	NNPS	SANDERS	1	0	False	True	False	False	False	0	True	1	0011100011	B-PER
+3	Sauls	NNP	SAULS	1	0	False	True	False	False	False	0	True	1	011111010	I-PER
+4	of	IN	OF	0	0	False	False	True	True	True	0	False	0	01000	O
+5	Leon	NNP	LEON	1	0	True	True	False	False	False	0	True	1	11100	B-ORG
 6	County	NNP	COUNTY	1	0	False	False	True	True	False	0	False	1	10111	I-ORG
 7	Circuit	NNP	CIRCUIT	1	0	False	False	True	False	False	0	False	1	10111	I-ORG
 8	Court	NNP	COURT	1	0	False	True	False	False	False	0	True	1	10111	I-ORG
@@ -340,8 +340,8 @@
 35	million	CD	MILLION	0	0	False	True	False	False	False	0	True	0	001110111	O
 36	ballots	NNS	BALLOTS	0	0	False	False	False	False	False	0	False	0	101011	O
 37	from	IN	FROM	0	0	False	True	False	False	True	0	True	0	010011111	O
-38	Palm	NNP	PALM	1	0	False	True	False	False	True	0	True	1	1111111	B-GPE
-39	Beach	NNP	BEACH	1	0	False	True	True	True	False	0	True	1	11100	I-GPE
+38	Palm	NNP	PALM	1	0	False	True	False	False	True	0	True	1	1111111	B-PER
+39	Beach	NNP	BEACH	1	0	False	True	True	True	False	0	True	1	11100	I-PER
 40	and	CC	AND	0	0	False	False	True	False	True	0	False	0	01011111	O
 41	Miami-Dade	NNP	MIAMI-DADE	1	0	False	False	False	False	False	0	False	1	11110	O
 42	counties	NNS	COUNTIES	0	0	False	False	False	False	False	0	False	0	101011	O
@@ -543,7 +543,7 @@
 3	he	PRP	HE	0	0	False	True	False	False	False	0	True	0	01101100	O
 4	understood	VBD	UNDERSTOOD	0	0	False	False	False	False	False	0	False	0	010110010	O
 5	why	JJ	WHY	0	0	False	True	False	False	False	0	True	0	01111111011	O
-6	Gore	NNP	GORE	1	0	False	True	False	False	False	0	True	1	011010	O
+6	Gore	NNP	GORE	1	0	False	True	False	False	False	0	True	1	011010	B-PER
 7	needed	VBD	NEEDED	0	0	False	False	False	False	False	0	False	0	0111101110	O
 8	to	TO	TO	0	0	False	True	False	False	True	0	True	0	010100	O
 9	accelerate	VB	ACCELERATE	0	0	False	False	False	False	False	0	False	0	011100	O
@@ -838,7 +838,7 @@
 
 0	But	CC	BUT	1	1	False	True	False	False	False	0	True	1	001011	O
 1	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
-2	Web	NNP	WEB	1	0	False	False	False	False	False	0	False	1	1001100	O
+2	Web	NNP	WEB	1	0	False	False	False	False	False	0	False	1	1001100	B-ORG
 3	,	,	,	0	0	False	False	True	False	True	0	False	1	01011110	O
 4	as	IN	AS	0	0	False	False	True	False	True	0	False	0	01001010	O
 5	an	DT	AN	0	0	True	True	False	False	False	0	True	0	110110	O
@@ -848,7 +848,7 @@
 9	interface	NN	INTERFACE	0	0	False	False	False	False	False	0	False	0	01111001	O
 10	for	IN	FOR	0	0	False	False	True	False	True	0	False	0	010011101	O
 11	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
-12	Internet	NNP	INTERNET	1	0	False	False	True	False	True	0	False	1	100010	O
+12	Internet	NNP	INTERNET	1	0	False	False	True	False	True	0	False	1	100010	B-ORG
 13	,	,	,	0	0	False	False	True	False	True	0	False	1	01011110	O
 14	has	VBZ	HAS	0	0	False	True	False	False	False	0	True	0	0101101110	O
 15	opened	VBN	OPENED	0	0	False	False	False	False	False	0	False	0	01011000	O
@@ -895,7 +895,7 @@
 30	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
 
 0	The	DT	THE	1	1	False	False	True	True	True	0	False	1	001010	O
-1	Web	NNP	WEB	1	0	False	False	False	False	False	0	False	1	1001100	O
+1	Web	NNP	WEB	1	0	False	False	False	False	False	0	False	1	1001100	B-ORG
 2	is	VBZ	IS	0	0	False	False	False	False	True	0	False	0	010110010	O
 3	changing	VBG	CHANGING	0	0	False	False	False	False	False	0	False	0	010011011	O
 4	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
@@ -1129,7 +1129,7 @@
 11	.''	.	.''	0	0	False	False	False	False	False	0	False	1	0011011	O
 
 0	The	DT	THE	1	1	False	False	True	True	True	0	False	1	001010	O
-1	Web	NNP	WEB	1	0	False	False	False	False	False	0	False	1	1001100	O
+1	Web	NNP	WEB	1	0	False	False	False	False	False	0	False	1	1001100	B-ORG
 2	is	VBZ	IS	0	0	False	False	False	False	True	0	False	0	010110010	O
 3	also	RB	ALSO	0	0	False	False	False	False	False	0	False	0	011110101	O
 4	letting	VBG	LETTING	0	0	False	False	False	False	False	0	False	0	001110010	O
@@ -1242,7 +1242,7 @@
 29	equipment	NN	EQUIPMENT	0	0	False	False	False	False	False	0	False	0	01101110	O
 30	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
 
-0	GE	NNP	GE	1	1	False	False	True	False	False	0	False	1	001000	O
+0	GE	NNP	GE	1	1	False	False	True	False	False	0	False	1	001000	B-ORG
 1	will	MD	WILL	0	0	True	True	False	False	True	0	True	0	010101	O
 2	let	VB	LET	0	0	False	False	False	True	False	0	False	0	011111100	O
 3	them	PRP	THEM	0	0	False	True	False	False	False	0	True	0	10100	O
@@ -1281,7 +1281,7 @@
 0	``	``	``	0	1	False	False	False	False	False	0	False	1	0011110	O
 1	With	IN	WITH	1	0	False	False	False	False	True	0	False	1	001011	O
 2	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
-3	Web	NNP	WEB	1	0	False	False	False	False	False	0	False	1	1001100	O
+3	Web	NNP	WEB	1	0	False	False	False	False	False	0	False	1	1001100	B-ORG
 4	,	,	,	0	0	False	False	True	False	True	0	False	1	01011110	O
 5	every	NN	EVERY	0	0	False	True	False	False	False	0	True	0	1100	O
 6	day	NN	DAY	0	0	False	True	False	False	True	0	True	0	100010	O
@@ -1387,7 +1387,7 @@
 0	FIFE	NNP	FIFE	1	1	False	True	False	False	False	0	True	1	000111	B-PER
 1	LAKE	NNP	LAKE	1	0	False	True	False	True	False	0	True	1	011000	I-PER
 2	,	,	,	0	0	False	False	True	False	True	0	False	1	01011110	O
-3	Mich	NNP	MICH	1	0	False	False	False	False	False	0	False	1	001110111	O
+3	Mich	NNP	MICH	1	0	False	False	False	False	False	0	False	1	001110111	B-GPE
 4	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
 
 0	_	``	_	0	1	False	False	False	False	False	0	False	1	001110011	O
@@ -1559,7 +1559,7 @@
 4	laid	VBN	LAID	0	0	False	False	False	False	False	0	False	0	010110011	O
 5	out	RP	OUT	0	0	False	False	False	False	True	0	False	0	01111001	O
 6	in	IN	IN	0	0	True	True	True	True	True	0	True	0	010011110	O
-7	Michigan	NNP	MICHIGAN	1	0	False	False	False	True	False	0	False	1	011000	B-GPE
+7	Michigan	NNP	MICHIGAN	1	0	False	False	False	True	False	0	False	1	011000	O
 8	law	NN	LAW	0	0	False	True	False	False	False	0	True	0	1001101	O
 9	will	MD	WILL	0	0	True	True	False	False	True	0	True	0	010101	O
 10	be	VB	BE	0	0	False	True	True	True	True	0	True	0	011101	O
@@ -1583,12 +1583,12 @@
 
 0	There	EX	THERE	1	1	False	False	False	False	True	0	False	1	001000	O
 1	,	,	,	0	0	False	False	True	False	True	0	False	1	01011110	O
-2	Grand	NNP	GRAND	1	0	False	True	False	False	True	0	True	1	0111111110	B-ORG
-3	Traverse	NNP	TRAVERSE	1	0	False	True	False	False	False	0	True	1	11100	I-ORG
-4	County	NNP	COUNTY	1	0	False	False	True	True	False	0	False	1	10111	I-ORG
-5	Clerk	NNP	CLERK	1	0	False	True	False	False	False	0	True	1	10011110	I-ORG
-6	Linda	NNP	LINDA	1	0	True	True	True	False	False	0	True	1	01111111011	I-ORG
-7	Coburn	NNP	COBURN	1	0	False	True	False	False	False	0	True	1	01101100	I-ORG
+2	Grand	NNP	GRAND	1	0	False	True	False	False	True	0	True	1	0111111110	O
+3	Traverse	NNP	TRAVERSE	1	0	False	True	False	False	False	0	True	1	11100	O
+4	County	NNP	COUNTY	1	0	False	False	True	True	False	0	False	1	10111	O
+5	Clerk	NNP	CLERK	1	0	False	True	False	False	False	0	True	1	10011110	O
+6	Linda	NNP	LINDA	1	0	True	True	True	False	False	0	True	1	01111111011	B-PER
+7	Coburn	NNP	COBURN	1	0	False	True	False	False	False	0	True	1	01101100	I-PER
 8	will	MD	WILL	0	0	True	True	False	False	True	0	True	0	010101	O
 9	hold	VB	HOLD	0	0	False	False	False	False	False	0	False	0	011101	O
 10	a	DT	A	0	0	False	False	False	True	True	0	False	0	1100	O
@@ -1665,7 +1665,7 @@
 26	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
 
 0	``	``	``	0	1	False	False	False	False	False	0	False	1	0011110	O
-1	Oh	NNP	OH	1	0	False	True	False	False	False	0	True	1	001000	B-PER
+1	Oh	NNP	OH	1	0	False	True	False	False	False	0	True	1	001000	O
 2	,	,	,	0	0	False	False	True	False	True	0	False	1	01011110	O
 3	gosh	NN	GOSH	0	0	False	False	False	False	False	0	False	0	0111111110	O
 4	no	RB	NO	0	0	False	True	False	False	True	0	True	0	0111111011	O
@@ -1726,7 +1726,7 @@
 12	,	,	,	0	0	False	False	True	False	True	0	False	1	01011110	O
 13	since	IN	SINCE	0	0	False	False	False	False	False	0	False	0	010011011	O
 14	both	DT	BOTH	0	0	False	True	False	False	False	0	True	0	011111011	O
-15	Stremlow	NNP	STREMLOW	1	0	False	True	False	False	False	0	True	1	01101100	B-PER
+15	Stremlow	NNP	STREMLOW	1	0	False	True	False	False	False	0	True	1	01101100	O
 16	and	CC	AND	0	0	False	False	True	False	True	0	False	0	01011111	O
 17	Larson	NNP	LARSON	1	0	False	True	False	False	False	0	True	1	011010	B-PER
 18	already	RB	ALREADY	0	0	False	False	False	False	False	0	False	0	011110100	O
@@ -1797,8 +1797,8 @@
 7	take	VB	TAKE	0	0	False	False	False	False	False	0	False	0	011101	O
 8	.''	.	.''	0	0	False	False	False	False	False	0	False	1	0011011	O
 
-0	Fife	NNP	FIFE	1	1	False	True	False	False	False	0	True	1	11110	O
-1	Lake	NNP	LAKE	1	0	False	True	False	True	False	0	True	1	10000	O
+0	Fife	NNP	FIFE	1	1	False	True	False	False	False	0	True	1	11110	B-PER
+1	Lake	NNP	LAKE	1	0	False	True	False	True	False	0	True	1	10000	I-PER
 2	came	VBD	CAME	0	0	False	False	False	False	False	0	False	0	01111001	O
 3	to	TO	TO	0	0	False	True	False	False	True	0	True	0	010100	O
 4	life	VB	LIFE	0	0	False	True	True	True	True	0	True	0	101010	O
@@ -2334,7 +2334,7 @@
 0	&UR	NNS	&UR	0	1	False	False	False	False	False	0	False	1	000110	O
 1	;	:	;	0	0	False	False	False	False	False	0	False	1	00010	O
 2	(	JJ	(	0	0	False	False	False	False	False	0	False	1	001110000	O
-3	ATTN	NNP	ATTN	1	0	False	False	False	False	False	0	False	1	0011100010	O
+3	ATTN	NNP	ATTN	1	0	False	False	False	False	False	0	False	1	0011100010	B-ORG
 4	:	:	:	0	0	False	False	False	False	False	0	False	1	001110010	O
 5	Mich	NNP	MICH	1	0	False	False	False	False	False	0	False	1	001110111	O
 6	.)	CD	.)	0	0	False	False	False	False	False	0	False	1	001110110	O
@@ -2485,7 +2485,7 @@
 28	1970s	NNS	1970S	0	0	False	False	False	False	False	0	False	1	100011	O
 29	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
 
-0	Gresser	NNP	GRESSER	1	1	False	False	False	False	False	0	False	1	011010	O
+0	Gresser	NNP	GRESSER	1	1	False	False	False	False	False	0	False	1	011010	B-PER
 1	entered	VBD	ENTERED	0	0	False	False	False	False	False	0	False	0	01001011	O
 2	her	PRP$	HER	0	0	False	True	False	False	False	0	True	0	1101111	O
 3	first	JJ	FIRST	0	0	False	True	True	False	True	0	True	0	111110	O
@@ -2505,8 +2505,8 @@
 7	U.S.	NNP	U.S.	1	0	False	False	False	False	False	1	False	1	11101	O
 8	Women	NNP	WOMEN	1	0	False	True	False	False	False	0	True	1	10111	O
 9	's	POS	'S	0	0	False	False	False	True	False	0	False	1	0101110	O
-10	Chess	NNP	CHESS	1	0	False	True	False	False	True	0	True	1	1001110	O
-11	Championship	NNP	CHAMPIONSHIP	1	0	False	False	False	False	True	0	False	1	010011101	O
+10	Chess	NNP	CHESS	1	0	False	True	False	False	True	0	True	1	1001110	B-PER
+11	Championship	NNP	CHAMPIONSHIP	1	0	False	False	False	False	True	0	False	1	010011101	I-PER
 12	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
 
 0	She	NNP	SHE	1	1	False	False	False	False	False	0	False	1	001001	O
@@ -2616,13 +2616,13 @@
 8	into	IN	INTO	0	0	False	False	False	False	False	0	False	0	010011101	O
 9	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
 10	U.S.	NNP	U.S.	1	0	False	False	False	False	False	1	False	1	11101	O
-11	Chess	NNP	CHESS	1	0	False	True	False	False	True	0	True	1	1001110	B-PER
-12	Hall	NNP	HALL	1	0	False	True	False	False	True	0	True	1	1001110	I-PER
+11	Chess	NNP	CHESS	1	0	False	True	False	False	True	0	True	1	1001110	O
+12	Hall	NNP	HALL	1	0	False	True	False	False	True	0	True	1	1001110	O
 13	of	IN	OF	0	0	False	False	True	True	True	0	False	0	01000	O
 14	Fame	NNP	FAME	1	0	False	False	False	True	True	0	False	1	011000	B-GPE
 15	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
 
-0	Gresser	NNP	GRESSER	1	1	False	False	False	False	False	0	False	1	011010	O
+0	Gresser	NNP	GRESSER	1	1	False	False	False	False	False	0	False	1	011010	B-PER
 1	studied	VBD	STUDIED	0	0	False	False	False	False	False	0	False	0	010110011	O
 2	classics	NNS	CLASSICS	0	0	False	False	True	False	False	0	False	0	01111001	O
 3	as	IN	AS	0	0	False	False	True	False	True	0	False	0	01001010	O
@@ -2773,9 +2773,9 @@
 33	reliever	NN	RELIEVER	0	0	False	False	False	False	False	0	False	0	1001101	O
 34	for	IN	FOR	0	0	False	False	True	False	True	0	False	0	010011101	O
 35	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
-36	Kansas	NNP	KANSAS	1	0	False	True	False	True	False	0	True	1	1111111	O
-37	City	NNP	CITY	1	0	False	True	True	True	True	0	True	1	011001	O
-38	Royals	NNP	ROYALS	1	0	False	True	False	False	False	0	True	1	100010	O
+36	Kansas	NNP	KANSAS	1	0	False	True	False	True	False	0	True	1	1111111	B-ORG
+37	City	NNP	CITY	1	0	False	True	True	True	True	0	True	1	011001	I-ORG
+38	Royals	NNP	ROYALS	1	0	False	True	False	False	False	0	True	1	100010	I-ORG
 39	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
 
 0	Cone	NNP	CONE	1	1	False	True	False	False	False	0	True	1	011010	B-PER
@@ -2807,7 +2807,7 @@
 26	operations	NNS	OPERATIONS	0	0	False	False	True	False	False	0	False	0	10110	O
 27	with	IN	WITH	0	0	False	False	False	False	True	0	False	0	01001011	O
 28	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
-29	Royals	NNS	ROYALS	1	0	False	True	False	False	False	0	True	1	100010	O
+29	Royals	NNS	ROYALS	1	0	False	True	False	False	False	0	True	1	100010	B-ORG
 30	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
 
 0	He	PRP	HE	1	1	False	True	False	False	False	0	True	1	001001	O
@@ -3015,7 +3015,7 @@
 8	this	DT	THIS	0	0	False	False	False	False	True	0	False	0	1111110	O
 9	week	NN	WEEK	0	0	False	False	False	False	True	0	False	0	100011	O
 10	from	IN	FROM	0	0	False	True	False	False	True	0	True	0	010011111	O
-11	Creditcards.com	NNP	CREDITCARDS.COM	1	0	False	False	False	False	False	1	False	1	11110	O
+11	Creditcards.com	NNP	CREDITCARDS.COM	1	0	False	False	False	False	False	1	False	1	11110	B-GPE
 12	,	,	,	0	0	False	False	True	False	True	0	False	1	01011110	O
 13	a	DT	A	0	0	False	False	False	True	True	0	False	0	1100	O
 14	company	NN	COMPANY	0	0	False	False	True	False	False	0	False	0	10010	O
@@ -3149,8 +3149,8 @@
 12	online	NN	ONLINE	0	0	False	False	True	False	True	0	False	0	1001100	O
 13	fitness	NN	FITNESS	0	0	False	False	False	False	False	0	False	0	1001100	O
 14	site	JJ	SITE	0	0	False	False	False	False	False	0	False	0	100010	O
-15	Premier	NNP	PREMIER	1	0	False	False	False	False	True	0	False	1	01011111	B-ORG
-16	Solutions	NNPS	SOLUTIONS	1	0	False	False	True	False	False	0	False	1	011010	I-ORG
+15	Premier	NNP	PREMIER	1	0	False	False	False	False	True	0	False	1	01011111	O
+16	Solutions	NNPS	SOLUTIONS	1	0	False	False	True	False	False	0	False	1	011010	O
 17	,	,	,	0	0	False	False	True	False	True	0	False	1	01011110	O
 18	Rock	NNP	ROCK	1	0	False	True	False	True	True	0	True	1	1001110	B-PER
 19	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
@@ -3170,7 +3170,7 @@
 3	your	PRP$	YOUR	0	0	False	False	False	False	True	0	False	0	1101111	O
 4	business	NN	BUSINESS	0	0	False	False	True	False	True	0	False	0	1001110	O
 5	go	VB	GO	0	0	False	True	True	False	False	0	True	0	011101	O
-6	Ka-Chingg	NNP	KA-CHINGG	1	0	False	False	False	False	False	0	False	1	01001100	O
+6	Ka-Chingg	NNP	KA-CHINGG	1	0	False	False	False	False	False	0	False	1	01001100	B-GPE
 7	,''	IN	,''	0	0	False	False	False	False	False	0	False	1	0011010	O
 8	its	PRP$	ITS	0	0	False	False	False	False	False	0	False	0	1101111	O
 9	Web	NNP	WEB	1	0	False	False	False	False	False	0	False	1	1001100	O
@@ -3399,10 +3399,10 @@
 27	division	NN	DIVISION	0	0	False	False	True	False	True	0	False	0	1001100	O
 28	,	,	,	0	0	False	False	True	False	True	0	False	1	01011110	O
 29	replacing	VBG	REPLACING	0	0	False	False	False	False	False	0	False	0	0111111110	O
-30	Garth	NNP	GARTH	1	0	True	True	False	False	False	0	True	1	001100	O
-31	Ancier	JJR	ANCIER	1	0	False	False	False	False	False	0	False	1	001000	O
+30	Garth	NNP	GARTH	1	0	True	True	False	False	False	0	True	1	001100	B-PER
+31	Ancier	JJR	ANCIER	1	0	False	False	False	False	False	0	False	1	001000	I-PER
 32	,	,	,	0	0	False	False	True	False	True	0	False	1	01011110	O
-33	NBC	NNP	NBC	1	0	False	False	True	False	False	0	False	1	011010	B-ORG
+33	NBC	NNP	NBC	1	0	False	False	True	False	False	0	False	1	011010	O
 34	executives	NNS	EXECUTIVES	0	0	False	False	False	False	False	0	False	0	0101101110	O
 35	said	VBD	SAID	0	0	False	True	False	False	False	0	True	0	0011111	O
 36	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
@@ -3673,7 +3673,7 @@
 9	Wing	NNP	WING	1	0	False	True	False	False	True	0	True	1	1001101	O
 10	,''	,	,''	0	0	False	False	False	False	False	0	False	1	0011010	O
 11	``	``	``	0	0	False	False	False	False	False	0	False	1	0011110	O
-12	Law	NNP	LAW	1	0	False	True	False	False	False	0	True	1	00111010	O
+12	Law	NNP	LAW	1	0	False	True	False	False	False	0	True	1	00111010	B-PER
 13	and	CC	AND	0	0	False	False	True	False	True	0	False	0	01011111	O
 14	Order	NNP	ORDER	1	0	False	False	False	False	False	0	False	1	0111101111	O
 15	S.V.U	NNP	S.V.U	1	0	False	False	False	False	False	1	False	1	10100	O
@@ -3765,7 +3765,7 @@
 23	network	NN	NETWORK	0	0	False	False	False	False	True	0	False	0	1001110	O
 24	,	,	,	0	0	False	False	True	False	True	0	False	1	01011110	O
 25	and	CC	AND	0	0	False	False	True	False	True	0	False	0	01011111	O
-26	NBC	NNP	NBC	1	0	False	False	True	False	False	0	False	1	011010	B-ORG
+26	NBC	NNP	NBC	1	0	False	False	True	False	False	0	False	1	011010	O
 27	executives	NNS	EXECUTIVES	0	0	False	False	False	False	False	0	False	0	0101101110	O
 28	have	VBP	HAVE	0	0	False	False	False	False	False	0	False	0	010110110	O
 29	said	VBN	SAID	0	0	False	True	False	False	False	0	True	0	0011111	O
@@ -3855,7 +3855,7 @@
 24	Titans	NNPS	TITANS	1	0	False	False	False	False	False	0	False	1	001000	O
 25	.''	.	.''	0	0	False	False	False	False	False	0	False	1	0011011	O
 
-0	Ancier	NNP	ANCIER	1	1	False	False	False	False	False	0	False	1	001000	O
+0	Ancier	NNP	ANCIER	1	1	False	False	False	False	False	0	False	1	001000	B-PER
 1	was	VBD	WAS	0	0	False	False	False	False	True	0	False	0	010110011	O
 2	especially	RB	ESPECIALLY	0	0	False	False	False	False	False	0	False	0	0111101111	O
 3	tied	VBN	TIED	0	0	False	False	False	False	False	0	False	0	01111000	O
@@ -3905,14 +3905,14 @@
 25	tasteless	JJ	TASTELESS	0	0	False	False	False	False	False	0	False	0	01111001	O
 26	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
 
-0	Ancier	NNP	ANCIER	1	1	False	False	False	False	False	0	False	1	001000	O
+0	Ancier	NNP	ANCIER	1	1	False	False	False	False	False	0	False	1	001000	B-PER
 1	had	VBD	HAD	0	0	False	False	False	False	False	0	False	0	0101101111	O
 2	dismissed	VBN	DISMISSED	0	0	False	False	False	False	False	0	False	0	01001100	O
 3	that	IN	THAT	0	0	False	False	False	False	False	0	False	0	0111111100	O
 4	criticism	NN	CRITICISM	0	0	False	False	False	False	False	0	False	0	100010	O
 5	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
 
-0	Ancier	NNP	ANCIER	1	1	False	False	False	False	False	0	False	1	001000	O
+0	Ancier	NNP	ANCIER	1	1	False	False	False	False	False	0	False	1	001000	B-PER
 1	was	VBD	WAS	0	0	False	False	False	False	True	0	False	0	010110011	O
 2	also	RB	ALSO	0	0	False	False	False	False	False	0	False	0	011110101	O
 3	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
@@ -3921,7 +3921,7 @@
 6	some	DT	SOME	0	0	False	False	False	False	True	0	False	0	011111011	O
 7	criticism	NN	CRITICISM	0	0	False	False	False	False	False	0	False	0	100010	O
 8	from	IN	FROM	0	0	False	True	False	False	True	0	True	0	010011111	O
-9	Wright	NNP	WRIGHT	1	0	False	True	False	False	False	0	True	1	011000	B-PER
+9	Wright	NNP	WRIGHT	1	0	False	True	False	False	False	0	True	1	011000	B-GPE
 10	last	JJ	LAST	0	0	False	True	False	False	True	0	True	0	1111111	O
 11	year	NN	YEAR	0	0	False	False	False	False	False	0	False	0	100011	O
 12	after	IN	AFTER	0	0	False	False	False	False	True	0	False	0	010011011	O
@@ -3953,7 +3953,7 @@
 38	programs	NNS	PROGRAMS	0	0	False	False	False	False	False	0	False	0	10100	O
 39	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
 
-0	Wright	NNP	WRIGHT	1	1	False	True	False	False	False	0	True	1	011000	O
+0	Wright	NNP	WRIGHT	1	1	False	True	False	False	False	0	True	1	011000	B-PER
 1	questioned	VBD	QUESTIONED	0	0	False	False	False	False	False	0	False	0	0111111111	O
 2	why	JJ	WHY	0	0	False	True	False	False	False	0	True	0	01111111011	O
 3	NBC	NNP	NBC	1	0	False	False	True	False	False	0	False	1	011010	B-ORG
@@ -3974,7 +3974,7 @@
 18	genre	NN	GENRE	0	0	False	True	False	False	False	0	True	0	01001100	O
 19	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
 
-0	Ancier	NNP	ANCIER	1	1	False	False	False	False	False	0	False	1	001000	O
+0	Ancier	NNP	ANCIER	1	1	False	False	False	False	False	0	False	1	001000	B-PER
 1	had	VBD	HAD	0	0	False	False	False	False	False	0	False	0	0101101111	O
 2	come	VBN	COME	0	0	False	True	False	False	False	0	True	0	01111000	O
 3	to	TO	TO	0	0	False	True	False	False	True	0	True	0	010100	O
@@ -4014,8 +4014,8 @@
 26	programming	VBG	PROGRAMMING	0	0	False	False	False	False	False	0	False	0	01111001	O
 27	at	IN	AT	0	0	False	False	False	False	True	0	False	0	010011100	O
 28	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
-29	WB	NNP	WB	1	0	False	False	False	False	True	0	False	1	0011110	B-ORG
-30	Network	NNP	NETWORK	1	0	False	False	False	False	True	0	False	1	001000	I-ORG
+29	WB	NNP	WB	1	0	False	False	False	False	True	0	False	1	0011110	B-PER
+30	Network	NNP	NETWORK	1	0	False	False	False	False	True	0	False	1	001000	I-PER
 31	,	,	,	0	0	False	False	True	False	True	0	False	1	01011110	O
 32	helping	VBG	HELPING	0	0	False	False	False	False	False	0	False	0	011011111	O
 33	that	IN	THAT	0	0	False	False	False	False	False	0	False	0	0111111100	O
@@ -4703,7 +4703,7 @@
 7	&QL	NNP	&QL	0	0	False	False	False	False	False	0	False	1	000110	O
 8	;	:	;	0	0	False	False	False	False	False	0	False	1	00010	O
 
-0	ROME	NNP	ROME	1	1	False	True	False	True	False	0	True	1	000111	B-GPE
+0	ROME	NNP	ROME	1	1	False	True	False	True	False	0	True	1	000111	O
 1	_	NNP	_	0	0	False	False	False	False	False	0	False	1	001110011	O
 2	In	IN	IN	1	0	True	True	True	True	True	0	True	1	001011	O
 3	an	DT	AN	0	0	True	True	False	False	False	0	True	0	110110	O
@@ -4831,9 +4831,9 @@
 10	,	,	,	0	0	False	False	True	False	True	0	False	1	01011110	O
 11	walked	VBD	WALKED	0	0	False	False	False	False	False	0	False	0	0111101111	O
 12	across	JJ	ACROSS	0	0	False	False	False	False	False	0	False	0	010011110	O
-13	St.	NNP	ST.	1	0	False	False	True	True	False	1	False	1	1101111	B-FAC
-14	Peter's	NNP	PETER'S	1	0	False	False	False	False	False	0	False	1	1001100	I-FAC
-15	Square	NN	SQUARE	1	0	False	True	False	True	False	0	True	1	010110101	I-FAC
+13	St.	NNP	ST.	1	0	False	False	True	True	False	1	False	1	1101111	O
+14	Peter's	NNP	PETER'S	1	0	False	False	False	False	False	0	False	1	1001100	O
+15	Square	NN	SQUARE	1	0	False	True	False	True	False	0	True	1	010110101	O
 16	to	TO	TO	0	0	False	True	False	False	True	0	True	0	010100	O
 17	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
 18	Vatican	NN	VATICAN	1	0	False	False	False	False	False	0	False	1	10010	O
@@ -4931,7 +4931,7 @@
 16	that	WDT	THAT	0	0	False	False	False	False	False	0	False	0	0111111100	O
 17	read	VB	READ	0	0	False	True	False	False	False	0	True	0	011100	O
 18	``	``	``	0	0	False	False	False	False	False	0	False	1	0011110	O
-19	Haider	NNP	HAIDER	1	0	False	True	False	False	False	0	True	1	011010	B-PER
+19	Haider	NNP	HAIDER	1	0	False	True	False	False	False	0	True	1	011010	O
 20	?	.	?	0	0	False	False	True	False	False	0	False	1	0011011	O
 
 0	No	DT	NO	1	1	False	True	False	False	True	0	True	1	001001	O
@@ -4960,9 +4960,9 @@
 18	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
 19	middle	NN	MIDDLE	0	0	False	False	False	False	False	0	False	0	011111010	O
 20	of	IN	OF	0	0	False	False	True	True	True	0	False	0	01000	O
-21	St.	NNP	ST.	1	0	False	False	True	True	False	1	False	1	1101111	B-FAC
-22	Peter's	NNP	PETER'S	1	0	False	False	False	False	False	0	False	1	1001100	I-FAC
-23	Square	NNP	SQUARE	1	0	False	True	False	True	False	0	True	1	010110101	I-FAC
+21	St.	NNP	ST.	1	0	False	False	True	True	False	1	False	1	1101111	B-ORG
+22	Peter's	NNP	PETER'S	1	0	False	False	False	False	False	0	False	1	1001100	I-ORG
+23	Square	NNP	SQUARE	1	0	False	True	False	True	False	0	True	1	010110101	I-ORG
 24	,	,	,	0	0	False	False	True	False	True	0	False	1	01011110	O
 25	was	VBD	WAS	0	0	False	False	False	False	True	0	False	0	010110011	O
 26	discreetly	RB	DISCREETLY	0	0	False	False	False	False	False	0	False	0	011110100	O
@@ -5222,7 +5222,7 @@
 40	gift	NN	GIFT	0	0	False	True	False	False	False	0	True	0	100010	O
 41	.''	.	.''	0	0	False	False	False	False	False	0	False	1	0011011	O
 
-0	Indeed	NNP	INDEED	1	1	False	False	False	False	False	0	False	1	011010	O
+0	Indeed	NNP	INDEED	1	1	False	False	False	False	False	0	False	1	011010	B-PER
 1	,	,	,	0	0	False	False	True	False	True	0	False	1	01011110	O
 2	in	IN	IN	0	0	True	True	True	True	True	0	True	0	010011110	O
 3	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
@@ -5260,9 +5260,9 @@
 18	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
 
 0	(	DT	(	0	1	False	False	False	False	False	0	False	1	001110000	O
-1	BEGIN	NNP	BEGIN	1	0	False	True	False	False	False	0	True	1	0011100010	B-ORG
-2	OPTIONAL	NNP	OPTIONAL	1	0	False	False	False	False	False	0	False	1	0111111111	I-ORG
-3	TRIM	NNP	TRIM	1	0	False	True	False	False	False	0	True	1	0011100010	I-ORG
+1	BEGIN	NNP	BEGIN	1	0	False	True	False	False	False	0	True	1	0011100010	O
+2	OPTIONAL	NNP	OPTIONAL	1	0	False	False	False	False	False	0	False	1	0111111111	O
+3	TRIM	NNP	TRIM	1	0	False	True	False	False	False	0	True	1	0011100010	O
 4	)	.	)	0	0	False	False	False	False	False	0	False	1	0011100011	O
 
 0	When	WRB	WHEN	1	1	False	False	False	False	False	0	False	1	001011	O
@@ -5395,11 +5395,11 @@
 18	would	MD	WOULD	0	0	False	False	False	False	True	0	False	0	010101	O
 19	complain	VB	COMPLAIN	0	0	False	False	False	False	False	0	False	0	010110110	O
 20	to	TO	TO	0	0	False	True	False	False	True	0	True	0	010100	O
-21	Chancellor	NNP	CHANCELLOR	1	0	False	True	False	False	False	0	True	1	011101	B-ORG
-22	Wolfgang	NNP	WOLFGANG	1	0	False	True	False	False	False	0	True	1	0101110	I-ORG
-23	Schuessel	NNP	SCHUESSEL	1	0	False	False	False	False	False	0	False	1	011111010	I-ORG
-24	of	IN	OF	0	0	False	False	True	True	True	0	False	0	01000	I-ORG
-25	Austria	NNP	AUSTRIA	1	0	False	True	True	False	False	0	True	1	101011	I-ORG
+21	Chancellor	NNP	CHANCELLOR	1	0	False	True	False	False	False	0	True	1	011101	B-PER
+22	Wolfgang	NNP	WOLFGANG	1	0	False	True	False	False	False	0	True	1	0101110	I-PER
+23	Schuessel	NNP	SCHUESSEL	1	0	False	False	False	False	False	0	False	1	011111010	I-PER
+24	of	IN	OF	0	0	False	False	True	True	True	0	False	0	01000	O
+25	Austria	NNP	AUSTRIA	1	0	False	True	True	False	False	0	True	1	101011	B-GPE
 26	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
 
 0	Italy	NNP	ITALY	1	1	False	False	False	False	False	0	False	1	011000	B-GPE
@@ -5472,9 +5472,9 @@
 44	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
 
 0	(	DT	(	0	1	False	False	False	False	False	0	False	1	001110000	O
-1	END	NNP	END	1	0	False	True	True	False	True	0	True	1	0011100010	B-ORG
-2	OPTIONAL	NNP	OPTIONAL	1	0	False	False	False	False	False	0	False	1	0111111111	I-ORG
-3	TRIM	NNP	TRIM	1	0	False	True	False	False	False	0	True	1	0011100010	I-ORG
+1	END	NNP	END	1	0	False	True	True	False	True	0	True	1	0011100010	O
+2	OPTIONAL	NNP	OPTIONAL	1	0	False	False	False	False	False	0	False	1	0111111111	O
+3	TRIM	NNP	TRIM	1	0	False	True	False	False	False	0	True	1	0011100010	O
 4	)	.	)	0	0	False	False	False	False	False	0	False	1	0011100011	O
 
 0	Some	DT	SOME	1	1	False	False	False	False	True	0	False	1	001001	O
@@ -5933,7 +5933,7 @@
 9	consider	NN	CONSIDER	0	0	False	False	False	False	False	0	False	0	011100	O
 10	flying	VBG	FLYING	0	0	False	False	True	False	True	0	False	0	10100	O
 11	into	IN	INTO	0	0	False	False	False	False	False	0	False	0	010011101	O
-12	Burbank	NNP	BURBANK	1	0	False	True	False	False	False	0	True	1	110110	O
+12	Burbank	NNP	BURBANK	1	0	False	True	False	False	False	0	True	1	110110	B-PER
 13	or	CC	OR	0	0	False	True	False	False	True	0	True	0	0111111111	O
 14	John	NNP	JOHN	1	0	True	True	False	False	True	0	True	1	0111111011	B-PER
 15	Wayne	NNP	WAYNE	1	0	True	True	False	False	False	0	True	1	11010	I-PER
@@ -5946,12 +5946,12 @@
 22	.,	,	.,	0	0	False	False	False	False	False	0	False	1	10110	O
 23	or	CC	OR	0	0	False	True	False	False	True	0	True	0	0111111111	O
 24	use	NN	USE	0	0	False	False	False	False	False	0	False	0	011100	O
-25	Westchester	NNP	WESTCHESTER	1	0	False	False	False	False	False	0	False	1	11100	B-ORG
-26	County	NNP	COUNTY	1	0	False	False	True	True	False	0	False	1	10111	I-ORG
-27	Airport	NNP	AIRPORT	1	0	False	False	True	True	False	0	False	1	10011110	I-ORG
-28	instead	NN	INSTEAD	0	0	False	False	False	False	False	0	False	0	01111001	I-ORG
-29	of	IN	OF	0	0	False	False	True	True	True	0	False	0	01000	I-ORG
-30	JFK	NNP	JFK	1	0	False	False	False	False	True	0	False	1	011000	I-ORG
+25	Westchester	NNP	WESTCHESTER	1	0	False	False	False	False	False	0	False	1	11100	O
+26	County	NNP	COUNTY	1	0	False	False	True	True	False	0	False	1	10111	O
+27	Airport	NNP	AIRPORT	1	0	False	False	True	True	False	0	False	1	10011110	O
+28	instead	NN	INSTEAD	0	0	False	False	False	False	False	0	False	0	01111001	O
+29	of	IN	OF	0	0	False	False	True	True	True	0	False	0	01000	O
+30	JFK	NNP	JFK	1	0	False	False	False	False	True	0	False	1	011000	B-GPE
 31	in	IN	IN	0	0	True	True	True	True	True	0	True	0	010011110	O
 32	New	NNP	NEW	1	0	False	True	True	True	True	0	True	1	11110	B-GPE
 33	York	NNP	YORK	1	0	False	True	True	True	True	0	True	1	10000	I-GPE
@@ -6084,9 +6084,9 @@
 21	money	NN	MONEY	0	0	False	True	False	False	True	0	True	0	101010	O
 22	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
 
-0	Day	NNP	DAY	1	1	False	True	False	False	True	0	True	1	1001100	O
-1	of	IN	OF	0	0	False	False	True	True	True	0	False	0	01000	O
-2	Departure	NN	DEPARTURE	1	0	False	False	False	False	False	0	False	1	1101110	O
+0	Day	NNP	DAY	1	1	False	True	False	False	True	0	True	1	1001100	B-ORG
+1	of	IN	OF	0	0	False	False	True	True	True	0	False	0	01000	I-ORG
+2	Departure	NN	DEPARTURE	1	0	False	False	False	False	False	0	False	1	1101110	I-ORG
 3	:	:	:	0	0	False	False	False	False	False	0	False	1	001110010	O
 
 0	_	DT	_	0	1	False	False	False	False	False	0	False	1	001110011	O
@@ -6574,7 +6574,7 @@
 4	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
 
 0	(	DT	(	0	1	False	False	False	False	False	0	False	1	001110000	O
-1	C-75	NNP	C-75	1	0	False	False	False	False	False	0	False	1	0011100010	B-ORG
+1	C-75	NNP	C-75	1	0	False	False	False	False	False	0	False	1	0011100010	O
 2	)	.	)	0	0	False	False	False	False	False	0	False	1	0011100011	O
 
 0	Department	NNP	DEPARTMENT	1	1	False	False	True	False	False	0	False	1	1001110	O
@@ -6713,9 +6713,9 @@
 21	offered	VBN	OFFERED	0	0	False	False	False	False	False	0	False	0	0111101110	O
 22	to	TO	TO	0	0	False	True	False	False	True	0	True	0	010100	O
 23	acquire	VB	ACQUIRE	0	0	False	False	False	False	False	0	False	0	011101	O
-24	Donna	NNP	DONNA	1	0	True	True	True	False	False	0	True	1	00111010	B-PER
-25	Karan	NNP	KARAN	1	0	True	False	False	False	False	0	True	1	011010	I-PER
-26	International	NNP	INTERNATIONAL	1	0	False	False	True	False	True	0	False	1	1001100	O
+24	Donna	NNP	DONNA	1	0	True	True	True	False	False	0	True	1	00111010	B-ORG
+25	Karan	NNP	KARAN	1	0	True	False	False	False	False	0	True	1	011010	I-ORG
+26	International	NNP	INTERNATIONAL	1	0	False	False	True	False	True	0	False	1	1001100	I-ORG
 27	for	IN	FOR	0	0	False	False	True	False	True	0	False	0	010011101	O
 28	$195	CD	$195	0	0	False	False	False	False	False	0	False	1	00111010	O
 29	million	CD	MILLION	0	0	False	True	False	False	False	0	True	0	001110111	O
@@ -6816,7 +6816,7 @@
 25	fashion	NN	FASHION	0	0	False	False	True	True	True	0	False	0	011011110	O
 26	houses	NNS	HOUSES	0	0	False	False	False	False	False	0	False	0	10110	O
 27	like	IN	LIKE	0	0	False	True	False	False	True	0	True	0	01111000	O
-28	Fendi	NNP	FENDI	1	0	False	False	False	False	False	0	False	1	011011010	O
+28	Fendi	NNP	FENDI	1	0	False	False	False	False	False	0	False	1	011011010	B-GPE
 29	were	VBD	WERE	0	0	False	False	False	False	False	0	False	0	01011000	O
 30	receiving	VBG	RECEIVING	0	0	False	False	False	False	False	0	False	0	011011111	O
 31	last	JJ	LAST	0	0	False	True	False	False	True	0	True	0	1111111	O
@@ -6845,7 +6845,7 @@
 19	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
 20	way	NN	WAY	0	0	False	True	False	False	True	0	True	0	1001101	O
 21	,	,	,	0	0	False	False	True	False	True	0	False	1	01011110	O
-22	LVMH	NNP	LVMH	1	0	False	False	False	False	False	0	False	1	01101100	O
+22	LVMH	NNP	LVMH	1	0	False	False	False	False	False	0	False	1	01101100	B-PER
 23	purchased	VBD	PURCHASED	0	0	False	False	False	False	False	0	False	0	0101101111	O
 24	Gabrielle	NNP	GABRIELLE	1	0	True	False	False	False	False	0	True	1	10100	B-PER
 25	Studio	NNP	STUDIO	1	0	False	False	True	False	True	0	False	1	10110	I-PER
@@ -6896,7 +6896,7 @@
 16	agreement	NN	AGREEMENT	0	0	False	False	False	False	False	0	False	0	10011111	O
 17	to	TO	TO	0	0	False	True	False	False	True	0	True	0	010100	O
 18	acquire	VB	ACQUIRE	0	0	False	False	False	False	False	0	False	0	011101	O
-19	DKI	NNP	DKI	1	0	False	False	False	False	False	0	False	1	10110	O
+19	DKI	NNP	DKI	1	0	False	False	False	False	False	0	False	1	10110	B-ORG
 20	within	IN	WITHIN	0	0	False	False	False	False	False	0	False	0	010011111	O
 21	one	CD	ONE	0	0	False	False	False	False	True	0	False	0	011111010	O
 22	year	NN	YEAR	0	0	False	False	False	False	False	0	False	0	100011	O
@@ -6913,11 +6913,11 @@
 8	aimed	VBD	AIMED	0	0	False	False	False	False	False	0	False	0	010110101	O
 9	to	TO	TO	0	0	False	True	False	False	True	0	True	0	010100	O
 10	combine	VB	COMBINE	0	0	False	False	False	False	False	0	False	0	011100	O
-11	Gabrielle	NNP	GABRIELLE	1	0	True	False	False	False	False	0	True	1	10100	B-ORG
-12	and	CC	AND	0	0	False	False	True	False	True	0	False	0	01011111	I-ORG
-13	Donna	NNP	DONNA	1	0	True	True	True	False	False	0	True	1	00111010	I-ORG
-14	Karan	NNP	KARAN	1	0	True	False	False	False	False	0	True	1	011010	I-ORG
-15	International	NNP	INTERNATIONAL	1	0	False	False	True	False	True	0	False	1	1001100	I-ORG
+11	Gabrielle	NNP	GABRIELLE	1	0	True	False	False	False	False	0	True	1	10100	B-PER
+12	and	CC	AND	0	0	False	False	True	False	True	0	False	0	01011111	O
+13	Donna	NNP	DONNA	1	0	True	True	True	False	False	0	True	1	00111010	B-PER
+14	Karan	NNP	KARAN	1	0	True	False	False	False	False	0	True	1	011010	I-PER
+15	International	NNP	INTERNATIONAL	1	0	False	False	True	False	True	0	False	1	1001100	I-PER
 16	and	CC	AND	0	0	False	False	True	False	True	0	False	0	01011111	O
 17	that	IN	THAT	0	0	False	False	False	False	False	0	False	0	0111111100	O
 18	it	PRP	IT	0	0	False	False	True	True	True	0	False	0	011011110	O
@@ -7153,7 +7153,7 @@
 0	``	``	``	0	1	False	False	False	False	False	0	False	1	0011110	O
 1	We	PRP	WE	1	0	False	False	False	False	True	0	False	1	011011011	O
 2	think	VBP	THINK	0	0	False	False	True	False	False	0	False	0	010110100	O
-3	LVMH	NNP	LVMH	1	0	False	False	False	False	False	0	False	1	01101100	B-PER
+3	LVMH	NNP	LVMH	1	0	False	False	False	False	False	0	False	1	01101100	O
 4	is	VBZ	IS	0	0	False	False	False	False	True	0	False	0	010110010	O
 5	getting	VBG	GETTING	0	0	False	True	False	False	False	0	True	0	011110101	O
 6	a	DT	A	0	0	False	False	False	True	True	0	False	0	1100	O
@@ -7177,10 +7177,10 @@
 24	acquisition	NN	ACQUISITION	0	0	False	False	True	False	False	0	False	0	10011111	O
 25	.''	.	.''	0	0	False	False	False	False	False	0	False	1	0011011	O
 
-0	Since	NNP	SINCE	1	1	False	False	False	False	False	0	False	1	001001	B-ORG
-1	Donna	NNP	DONNA	1	0	True	True	True	False	False	0	True	1	00111010	I-ORG
-2	Karan	NNP	KARAN	1	0	True	False	False	False	False	0	True	1	011010	I-ORG
-3	International	NNP	INTERNATIONAL	1	0	False	False	True	False	True	0	False	1	1001100	I-ORG
+0	Since	NNP	SINCE	1	1	False	False	False	False	False	0	False	1	001001	O
+1	Donna	NNP	DONNA	1	0	True	True	True	False	False	0	True	1	00111010	O
+2	Karan	NNP	KARAN	1	0	True	False	False	False	False	0	True	1	011010	O
+3	International	NNP	INTERNATIONAL	1	0	False	False	True	False	True	0	False	1	1001100	O
 4	went	VBD	WENT	0	0	False	True	False	False	False	0	True	0	010110101	O
 5	public	JJ	PUBLIC	0	0	False	True	False	False	False	0	True	0	10011111	O
 6	in	IN	IN	0	0	True	True	True	True	True	0	True	0	010011110	O
@@ -7262,9 +7262,9 @@
 6	,	,	,	0	0	False	False	True	False	True	0	False	1	01011110	O
 7	leaving	VBG	LEAVING	0	0	False	False	False	False	False	0	False	0	0111111110	O
 8	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
-9	Donna	NNP	DONNA	1	0	True	True	True	False	False	0	True	1	00111010	B-ORG
-10	Karan	NNP	KARAN	1	0	True	False	False	False	False	0	True	1	011010	I-ORG
-11	International	NNP	INTERNATIONAL	1	0	False	False	True	False	True	0	False	1	1001100	I-ORG
+9	Donna	NNP	DONNA	1	0	True	True	True	False	False	0	True	1	00111010	O
+10	Karan	NNP	KARAN	1	0	True	False	False	False	False	0	True	1	011010	O
+11	International	NNP	INTERNATIONAL	1	0	False	False	True	False	True	0	False	1	1001100	O
 12	initial	JJ	INITIAL	0	0	False	False	True	False	False	0	False	0	11101	O
 13	public	NN	PUBLIC	0	0	False	True	False	False	False	0	True	0	10011111	O
 14	offering	NN	OFFERING	0	0	False	False	False	False	False	0	False	0	001110110	O
@@ -7361,7 +7361,7 @@
 8	if	IN	IF	0	0	False	False	True	False	False	0	False	0	01111111011	O
 9	Donna	NNP	DONNA	1	0	True	True	True	False	False	0	True	1	00111010	B-PER
 10	Karan	NNP	KARAN	1	0	True	False	False	False	False	0	True	1	011010	I-PER
-11	International	NNP	INTERNATIONAL	1	0	False	False	True	False	True	0	False	1	1001100	O
+11	International	NNP	INTERNATIONAL	1	0	False	False	True	False	True	0	False	1	1001100	I-PER
 12	and	CC	AND	0	0	False	False	True	False	True	0	False	0	01011111	O
 13	Gabrielle	NNP	GABRIELLE	1	0	True	False	False	False	False	0	True	1	10100	O
 14	merge	NN	MERGE	0	0	False	False	False	False	False	0	False	0	0111101111	O
@@ -7472,13 +7472,13 @@
 25	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
 
 0	If	IN	IF	1	1	False	False	True	False	False	0	False	1	001011	O
-1	LVMH	NNP	LVMH	1	0	False	False	False	False	False	0	False	1	01101100	O
+1	LVMH	NNP	LVMH	1	0	False	False	False	False	False	0	False	1	01101100	B-PER
 2	succeeds	VBZ	SUCCEEDS	0	0	False	False	False	False	False	0	False	0	0011111	O
 3	in	IN	IN	0	0	True	True	True	True	True	0	True	0	010011110	O
 4	acquiring	VBG	ACQUIRING	0	0	False	False	False	False	False	0	False	0	1101110	O
 5	Donna	NNP	DONNA	1	0	True	True	True	False	False	0	True	1	00111010	B-PER
 6	Karan	NNP	KARAN	1	0	True	False	False	False	False	0	True	1	011010	I-PER
-7	International	NNP	INTERNATIONAL	1	0	False	False	True	False	True	0	False	1	1001100	O
+7	International	NNP	INTERNATIONAL	1	0	False	False	True	False	True	0	False	1	1001100	I-PER
 8	and	CC	AND	0	0	False	False	True	False	True	0	False	0	01011111	O
 9	combines	VBZ	COMBINES	0	0	False	False	False	False	False	0	False	0	01111111010	O
 10	it	PRP	IT	0	0	False	False	True	True	True	0	False	0	011011110	O
@@ -7576,8 +7576,8 @@
 26	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
 27	U.S.	NNP	U.S.	1	0	False	False	False	False	False	1	False	1	11101	O
 28	''	''	''	0	0	False	False	False	False	False	0	False	1	10110	O
-29	Donna	NNP	DONNA	1	0	True	True	True	False	False	0	True	1	00111010	B-PER
-30	Karan	NNP	KARAN	1	0	True	False	False	False	False	0	True	1	011010	I-PER
+29	Donna	NNP	DONNA	1	0	True	True	True	False	False	0	True	1	00111010	O
+30	Karan	NNP	KARAN	1	0	True	False	False	False	False	0	True	1	011010	O
 31	International	NNP	INTERNATIONAL	1	0	False	False	True	False	True	0	False	1	1001100	O
 32	gets	VBZ	GETS	0	0	False	False	False	False	False	0	False	0	0111111010	O
 33	35	CD	35	0	0	False	False	False	False	False	0	False	1	11100	O
@@ -7674,8 +7674,8 @@
 11	only	RB	ONLY	0	0	False	False	False	False	False	0	False	0	01111000	O
 12	speculation	NN	SPECULATION	0	0	False	False	False	False	False	0	False	0	10011111	O
 13	,	,	,	0	0	False	False	True	False	True	0	False	1	01011110	O
-14	C.I.	NNP	C.I.	1	0	False	False	False	False	False	1	False	1	00111010	B-ORG
-15	Fund	NNP	FUND	1	0	False	False	False	False	False	0	False	1	011010	I-ORG
+14	C.I.	NNP	C.I.	1	0	False	False	False	False	False	1	False	1	00111010	O
+15	Fund	NNP	FUND	1	0	False	False	False	False	False	0	False	1	011010	B-ORG
 16	Management	NNP	MANAGEMENT	1	0	False	False	True	False	True	0	False	1	01001010	I-ORG
 17	Inc	NNP	INC	1	0	False	False	False	False	False	0	False	1	10100	I-ORG
 18	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
@@ -7718,8 +7718,8 @@
 35	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
 
 0	Although	IN	ALTHOUGH	1	1	False	False	False	False	False	0	False	1	001011	O
-1	C.I.	NNP	C.I.	1	0	False	False	False	False	False	1	False	1	00111010	O
-2	Fund	NNP	FUND	1	0	False	False	False	False	False	0	False	1	011010	O
+1	C.I.	NNP	C.I.	1	0	False	False	False	False	False	1	False	1	00111010	B-PER
+2	Fund	NNP	FUND	1	0	False	False	False	False	False	0	False	1	011010	I-PER
 3	's	POS	'S	0	0	False	False	False	True	False	0	False	1	0101110	O
 4	cash-and-stock	NN	CASH-AND-STOCK	0	0	False	False	False	False	False	0	False	0	11101	O
 5	offer	NN	OFFER	0	0	False	True	False	False	False	0	True	0	10011111	O
@@ -7738,7 +7738,7 @@
 18	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
 19	price	NN	PRICE	0	0	False	True	False	False	False	0	True	0	10000	O
 20	of	IN	OF	0	0	False	False	True	True	True	0	False	0	01000	O
-21	Mackenzie	NNP	MACKENZIE	1	0	True	True	False	False	False	0	True	1	011010	B-PER
+21	Mackenzie	NNP	MACKENZIE	1	0	True	True	False	False	False	0	True	1	011010	O
 22	shares	NNS	SHARES	0	0	False	False	False	False	False	0	False	0	1001100	O
 23	on	IN	ON	0	0	False	True	True	False	True	0	True	0	010011010	O
 24	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
@@ -7805,8 +7805,8 @@
 20	salary	NN	SALARY	0	0	False	False	False	False	False	0	False	0	100010	O
 21	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
 
-0	C.I.	NNP	C.I.	1	1	False	False	False	False	False	1	False	1	00111010	O
-1	Fund	NNP	FUND	1	0	False	False	False	False	False	0	False	1	011010	O
+0	C.I.	NNP	C.I.	1	1	False	False	False	False	False	1	False	1	00111010	B-PER
+1	Fund	NNP	FUND	1	0	False	False	False	False	False	0	False	1	011010	I-PER
 2	was	VBD	WAS	0	0	False	False	False	False	True	0	False	0	010110011	O
 3	not	RB	NOT	0	0	False	False	False	False	True	0	False	0	011110100	O
 4	helped	VBN	HELPED	0	0	False	False	False	False	False	0	False	0	0101101111	O
@@ -7838,7 +7838,7 @@
 12	shares	NNS	SHARES	0	0	False	False	False	False	False	0	False	0	1001100	O
 13	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
 
-0	AIC	NNP	AIC	1	1	False	False	False	False	False	0	False	1	01101100	O
+0	AIC	NNP	AIC	1	1	False	False	False	False	False	0	False	1	01101100	B-PER
 1	agreed	VBD	AGREED	0	0	False	False	False	False	False	0	False	0	01111000	O
 2	that	IN	THAT	0	0	False	False	False	False	False	0	False	0	0111111100	O
 3	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
@@ -7956,8 +7956,8 @@
 19	new	JJ	NEW	0	0	False	True	True	True	True	0	True	0	11101	O
 20	developments	NNS	DEVELOPMENTS	0	0	False	False	False	False	False	0	False	0	10111	O
 21	,	,	,	0	0	False	False	True	False	True	0	False	1	01011110	O
-22	C.I.	NNP	C.I.	1	0	False	False	False	False	False	1	False	1	00111010	O
-23	Fund	NNP	FUND	1	0	False	False	False	False	False	0	False	1	011010	O
+22	C.I.	NNP	C.I.	1	0	False	False	False	False	False	1	False	1	00111010	B-PER
+23	Fund	NNP	FUND	1	0	False	False	False	False	False	0	False	1	011010	I-PER
 24	requested	VBD	REQUESTED	0	0	False	False	False	False	False	0	False	0	0111101110	O
 25	a	DT	A	0	0	False	False	False	True	True	0	False	0	1100	O
 26	hearing	NN	HEARING	0	0	False	True	False	False	False	0	True	0	100010	O
@@ -8020,9 +8020,9 @@
 22	along	IN	ALONG	0	0	False	False	False	False	False	0	False	0	0111111111	O
 23	with	IN	WITH	0	0	False	False	False	False	True	0	False	0	01001011	O
 24	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
-25	Caisse	NNP	CAISSE	1	0	False	True	False	False	False	0	True	1	1111111	O
-26	de	FW	DE	0	0	False	False	True	True	True	0	False	0	0011010	O
-27	Depot	NNP	DEPOT	1	0	False	False	False	False	False	0	False	1	0011111	O
+25	Caisse	NNP	CAISSE	1	0	False	True	False	False	False	0	True	1	1111111	B-ORG
+26	de	FW	DE	0	0	False	False	True	True	True	0	False	0	0011010	I-ORG
+27	Depot	NNP	DEPOT	1	0	False	False	False	False	False	0	False	1	0011111	I-ORG
 28	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
 
 0	It	PRP	IT	1	1	False	False	True	True	True	0	False	1	001000	O
@@ -8054,8 +8054,8 @@
 1	Wednesday	NNP	WEDNESDAY	1	0	False	False	False	False	False	0	False	1	011001	O
 2	morning	NN	MORNING	0	0	False	True	False	False	False	0	True	0	100010	O
 3	,	,	,	0	0	False	False	True	False	True	0	False	1	01011110	O
-4	C.I.	NNP	C.I.	1	0	False	False	False	False	False	1	False	1	00111010	O
-5	Fund	NNP	FUND	1	0	False	False	False	False	False	0	False	1	011010	O
+4	C.I.	NNP	C.I.	1	0	False	False	False	False	False	1	False	1	00111010	B-PER
+5	Fund	NNP	FUND	1	0	False	False	False	False	False	0	False	1	011010	I-PER
 6	withdrew	VBD	WITHDREW	0	0	False	False	False	False	False	0	False	0	01001100	O
 7	its	PRP$	ITS	0	0	False	False	False	False	False	0	False	0	1101111	O
 8	request	NN	REQUEST	0	0	False	False	False	False	False	0	False	0	1001100	O
@@ -8078,8 +8078,8 @@
 25	expired	VBN	EXPIRED	0	0	False	False	False	False	False	0	False	0	0011111	O
 26	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
 
-0	William	NNP	WILLIAM	1	1	True	True	True	True	False	0	True	1	00111010	B-PER
-1	Holland	NNP	HOLLAND	1	0	False	True	True	True	True	0	True	1	011010	I-PER
+0	William	NNP	WILLIAM	1	1	True	True	True	True	False	0	True	1	00111010	B-GPE
+1	Holland	NNP	HOLLAND	1	0	False	True	True	True	True	0	True	1	011010	I-GPE
 2	,	,	,	0	0	False	False	True	False	True	0	False	1	01011110	O
 3	C.I.	NNP	C.I.	1	0	False	False	False	False	False	1	False	1	00111010	B-PER
 4	Fund	NNP	FUND	1	0	False	False	False	False	False	0	False	1	011010	I-PER
@@ -8417,8 +8417,8 @@
 40	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
 41	Organization	NN	ORGANIZATION	1	0	False	False	False	False	False	0	False	1	011111010	O
 42	of	IN	OF	0	0	False	False	True	True	True	0	False	0	01000	O
-43	American	NNP	AMERICAN	1	0	False	True	True	False	True	0	True	1	11110	B-GPE
-44	States	NNPS	STATES	1	0	False	True	False	True	False	0	True	1	10000	I-GPE
+43	American	NNP	AMERICAN	1	0	False	True	True	False	True	0	True	1	11110	O
+44	States	NNPS	STATES	1	0	False	True	False	True	False	0	True	1	10000	O
 45	monitor	NN	MONITOR	0	0	False	False	True	False	False	0	False	0	011100	O
 46	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
 47	human	JJ	HUMAN	0	0	False	True	True	False	True	0	True	0	11101	O
@@ -9128,7 +9128,7 @@
 4	Lemieux	NNP	LEMIEUX	1	0	False	True	False	False	False	0	True	1	011010	B-PER
 5	pushed	VBD	PUSHED	0	0	False	False	False	False	False	0	False	0	0011111	O
 6	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
-7	NHL	NNP	NHL	1	0	False	False	False	False	False	0	False	1	10010	O
+7	NHL	NNP	NHL	1	0	False	False	False	False	False	0	False	1	10010	B-ORG
 8	into	IN	INTO	0	0	False	False	False	False	False	0	False	0	010011101	O
 9	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
 10	realm	NN	REALM	0	0	False	False	False	False	False	0	False	0	100010	O
@@ -9748,8 +9748,8 @@
 4	back	RB	BACK	0	0	False	True	False	False	True	0	True	0	1001101	O
 5	toward	IN	TOWARD	0	0	False	False	False	False	False	0	False	0	010011101	O
 6	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
-7	Northern	NNP	NORTHERN	1	0	False	True	False	False	False	0	True	1	111110	B-PER
-8	Hemisphere	NNP	HEMISPHERE	1	0	False	False	False	False	False	0	False	1	10000	I-PER
+7	Northern	NNP	NORTHERN	1	0	False	True	False	False	False	0	True	1	111110	O
+8	Hemisphere	NNP	HEMISPHERE	1	0	False	False	False	False	False	0	False	1	10000	O
 9	,	,	,	0	0	False	False	True	False	True	0	False	1	01011110	O
 10	shining	VBG	SHINING	0	0	False	False	False	False	True	0	False	0	011110101	O
 11	on	IN	ON	0	0	False	True	True	False	True	0	True	0	010011010	O
@@ -9785,7 +9785,7 @@
 20	they	PRP	THEY	0	0	False	False	False	False	False	0	False	0	011011010	O
 21	call	MD	CALL	0	0	False	True	False	False	False	0	True	0	010110100	O
 22	le	VB	LE	0	0	True	True	True	True	True	0	True	0	0111111100	O
-23	Magnifique	NNP	MAGNIFIQUE	1	0	False	False	False	False	False	0	False	1	011011110	B-PER
+23	Magnifique	NNP	MAGNIFIQUE	1	0	False	False	False	False	False	0	False	1	011011110	O
 24	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
 
 0	NYT-12-28-00	CD	NYT-12-28-00	1	1	False	False	False	False	False	0	False	1	001010	O
@@ -9907,8 +9907,8 @@
 1	,	,	,	0	0	False	False	True	False	True	0	False	1	01011110	O
 2	when	WRB	WHEN	0	0	False	False	False	False	False	0	False	0	01111111011	O
 3	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
-4	Electoral	NNP	ELECTORAL	1	0	False	False	False	False	False	0	False	1	11101	O
-5	College	NNP	COLLEGE	1	0	False	True	True	True	False	0	True	1	1001110	O
+4	Electoral	NNP	ELECTORAL	1	0	False	False	False	False	False	0	False	1	11101	B-ORG
+5	College	NNP	COLLEGE	1	0	False	True	True	True	False	0	True	1	1001110	I-ORG
 6	sealed	VBD	SEALED	0	0	False	False	False	False	False	0	False	0	01011111	O
 7	his	PRP$	HIS	0	0	False	False	False	False	True	0	False	0	1101111	O
 8	fate	NN	FATE	0	0	False	True	False	False	False	0	True	0	1001100	O
@@ -10010,14 +10010,14 @@
 24	Gans	NNPS	GANS	1	0	False	True	False	False	False	0	True	1	001001	I-PER
 25	of	IN	OF	0	0	False	False	True	True	True	0	False	0	01000	O
 26	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
-27	Committee	NNP	COMMITTEE	1	0	False	False	True	False	False	0	False	1	10111	O
+27	Committee	NNP	COMMITTEE	1	0	False	False	True	False	False	0	False	1	10111	B-ORG
 28	for	IN	FOR	0	0	False	False	True	False	True	0	False	0	010011101	O
 29	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
 30	Study	NN	STUDY	1	0	False	True	False	False	False	0	True	1	100010	O
 31	of	IN	OF	0	0	False	False	True	True	True	0	False	0	01000	O
 32	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
-33	American	NNP	AMERICAN	1	0	False	True	True	False	True	0	True	1	11110	O
-34	Electorate	NNP	ELECTORATE	1	0	False	False	False	False	False	0	False	1	10000	O
+33	American	NNP	AMERICAN	1	0	False	True	True	False	True	0	True	1	11110	B-ORG
+34	Electorate	NNP	ELECTORATE	1	0	False	False	False	False	False	0	False	1	10000	I-ORG
 35	,	,	,	0	0	False	False	True	False	True	0	False	1	01011110	O
 36	a	DT	A	0	0	False	False	False	True	True	0	False	0	1100	O
 37	nonpartisan	JJ	NONPARTISAN	0	0	False	False	False	False	False	0	False	0	11101	O
@@ -10182,8 +10182,8 @@
 28	in	IN	IN	0	0	True	True	True	True	True	0	True	0	010011110	O
 29	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
 30	all-important	JJ	ALL-IMPORTANT	0	0	False	False	False	False	False	0	False	0	111110	O
-31	Electoral	NNP	ELECTORAL	1	0	False	False	False	False	False	0	False	1	11101	O
-32	College	NNP	COLLEGE	1	0	False	True	True	True	False	0	True	1	1001110	O
+31	Electoral	NNP	ELECTORAL	1	0	False	False	False	False	False	0	False	1	11101	B-ORG
+32	College	NNP	COLLEGE	1	0	False	True	True	True	False	0	True	1	1001110	I-ORG
 33	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
 
 0	In	IN	IN	1	1	True	True	True	True	True	0	True	1	001011	O
@@ -10273,8 +10273,8 @@
 23	vote	NN	VOTE	0	0	False	True	False	False	False	0	True	0	1001110	O
 24	lost	VBD	LOST	0	0	False	False	False	False	True	0	False	0	0111101110	O
 25	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
-26	White	NNP	WHITE	1	0	False	True	False	False	True	0	True	1	111110	O
-27	House	NNP	HOUSE	1	0	False	True	False	True	True	0	True	1	100010	O
+26	White	NNP	WHITE	1	0	False	True	False	False	True	0	True	1	111110	B-ORG
+27	House	NNP	HOUSE	1	0	False	True	False	True	True	0	True	1	100010	I-ORG
 28	because	IN	BECAUSE	0	0	False	False	False	False	False	0	False	0	01111111010	O
 29	his	PRP$	HIS	0	0	False	False	False	False	True	0	False	0	1101111	O
 30	opponent	NN	OPPONENT	0	0	False	False	False	False	False	0	False	0	1001100	O
@@ -10335,10 +10335,10 @@
 47	voting	VBG	VOTING	0	0	False	False	False	False	False	0	False	0	1001110	O
 48	power	NN	POWER	0	0	False	True	True	False	False	0	True	0	10100	O
 49	in	IN	IN	0	0	True	True	True	True	True	0	True	0	010011110	O
-50	Congress	NNP	CONGRESS	1	0	False	True	False	False	False	0	True	1	011000	B-ORG
+50	Congress	NNP	CONGRESS	1	0	False	True	False	False	False	0	True	1	011000	O
 51	.	.	.	0	0	False	False	True	False	False	0	False	1	001100	O
 
-0	Gore	NNP	GORE	1	1	False	True	False	False	False	0	True	1	011010	B-PER
+0	Gore	NNP	GORE	1	1	False	True	False	False	False	0	True	1	011010	O
 1	won	NNP	WON	0	0	False	True	False	False	False	0	True	0	0111101110	O
 2	New	NNP	NEW	1	0	False	True	True	True	True	0	True	1	11110	O
 3	York	NNP	YORK	1	0	False	True	True	True	True	0	True	1	10000	O
@@ -10584,8 +10584,8 @@
 2	must	MD	MUST	0	0	False	True	False	False	False	0	True	0	010101	O
 3	arrive	VB	ARRIVE	0	0	False	False	False	False	False	0	False	0	011101	O
 4	by	IN	BY	0	0	False	False	False	False	True	0	False	0	0100100	O
-5	Election	NNP	ELECTION	1	0	False	False	False	False	False	0	False	1	1101110	O
-6	Day	NNP	DAY	1	0	False	True	False	False	True	0	True	1	1001100	O
+5	Election	NNP	ELECTION	1	0	False	False	False	False	False	0	False	1	1101110	B-ORG
+6	Day	NNP	DAY	1	0	False	True	False	False	True	0	True	1	1001100	I-ORG
 7	to	TO	TO	0	0	False	True	False	False	True	0	True	0	010100	O
 8	be	VB	BE	0	0	False	True	True	True	True	0	True	0	011101	O
 9	counted	VBN	COUNTED	0	0	False	False	False	False	False	0	False	0	01111000	O
@@ -10648,7 +10648,7 @@
 7	&QL	NNP	&QL	0	0	False	False	False	False	False	0	False	1	000110	O
 8	;	:	;	0	0	False	False	False	False	False	0	False	1	00010	O
 
-0	SEATTLE	NNP	SEATTLE	1	1	False	False	True	True	True	0	False	1	0011100011	O
+0	SEATTLE	NNP	SEATTLE	1	1	False	False	True	True	True	0	False	1	0011100011	B-GPE
 1	_	VBZ	_	0	0	False	False	False	False	False	0	False	1	001110011	O
 2	The	DT	THE	1	0	False	False	True	True	True	0	False	1	001010	O
 3	answers	NNS	ANSWERS	0	0	False	False	False	False	False	0	False	0	10010	O
@@ -10912,8 +10912,8 @@
 4	director	NN	DIRECTOR	0	0	False	False	False	False	True	0	False	0	011111010	O
 5	at	IN	AT	0	0	False	False	False	False	True	0	False	0	010011100	O
 6	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
-7	Oregon	NNP	OREGON	1	0	False	True	False	True	False	0	True	1	111110	O
-8	Zoo	NNP	ZOO	1	0	False	False	False	True	False	0	False	1	1001100	O
+7	Oregon	NNP	OREGON	1	0	False	True	False	True	False	0	True	1	111110	B-FAC
+8	Zoo	NNP	ZOO	1	0	False	False	False	True	False	0	False	1	1001100	I-FAC
 9	in	IN	IN	0	0	True	True	True	True	True	0	True	0	010011110	O
 10	Portland	NNP	PORTLAND	1	0	False	True	False	True	False	0	True	1	011000	B-GPE
 11	,	,	,	0	0	False	False	True	False	True	0	False	1	01011110	O
@@ -10980,9 +10980,9 @@
 22	her	PRP	HER	0	0	False	True	False	False	False	0	True	0	1101111	O
 23	to	TO	TO	0	0	False	True	False	False	True	0	True	0	010100	O
 24	the	DT	THE	0	0	False	False	True	True	True	0	False	0	11010	O
-25	Dickerson	NNP	DICKERSON	1	0	False	True	False	False	False	0	True	1	00111010	B-FAC
-26	Park	NNP	PARK	1	0	False	True	False	True	False	0	True	1	011010	I-FAC
-27	Zoo	NNP	ZOO	1	0	False	False	False	True	False	0	False	1	1001100	I-FAC
+25	Dickerson	NNP	DICKERSON	1	0	False	True	False	False	False	0	True	1	00111010	B-ORG
+26	Park	NNP	PARK	1	0	False	True	False	True	False	0	True	1	011010	I-ORG
+27	Zoo	NNP	ZOO	1	0	False	False	False	True	False	0	False	1	1001100	I-ORG
 28	in	IN	IN	0	0	True	True	True	True	True	0	True	0	010011110	O
 29	Springfield	NNP	SPRINGFIELD	1	0	False	True	False	True	False	0	True	1	011000	B-GPE
 30	,	,	,	0	0	False	False	True	False	True	0	False	1	01011110	O
@@ -11138,7 +11138,7 @@
 10	baby	NN	BABY	0	0	False	False	False	False	True	0	False	0	111110	O
 11	beginning	VBG	BEGINNING	0	0	False	False	False	False	False	0	False	0	100010	O
 12	in	IN	IN	0	0	True	True	True	True	True	0	True	0	010011110	O
-13	February	NNP	FEBRUARY	1	0	False	False	False	False	False	0	False	1	011000	O
+13	February	NNP	FEBRUARY	1	0	False	False	False	False	False	0	False	1	011000	B-GPE
 14	,	,	,	0	0	False	False	True	False	True	0	False	1	01011110	O
 15	David	NNP	DAVID	1	0	True	True	False	False	False	0	True	1	0111111111	B-PER
 16	L.	NNP	L.	1	0	False	False	True	False	False	1	False	1	01111111011	I-PER
