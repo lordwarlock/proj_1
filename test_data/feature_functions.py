@@ -24,7 +24,8 @@ def feat_cap_period(data):
         if (char == '.' or char == ',') :
             per_flag = 1
     return cap_flag*per_flag
-def get_feature_functions_list():
+
+def get_local_feature_functions():
             #3         4             5              6            7
     return [up_case,feat_first_cap,feat_first_word,first_name,last_name,\
             #8           9      10
@@ -33,6 +34,47 @@ def get_feature_functions_list():
             feat_cap_period,per_name,no_lower_case,\
             #14
             brown_cluster]
+            
+def enum(*sequential, **named):
+    enums = dict(zip(sequential, range(len(sequential))), **named)
+    return type('Enum', (), enums)
+
+def get_global_feature_functions():
+    return [gf_zone]
+
+def gf_zone(data):
+    state=0
+    result=[]
+    docprefix=""
+    for line in data:
+        if line==None:
+            if state!=0:
+                state=(state + 1) % 5
+            result.append("")
+            continue
+        if state==2 and docprefix=='APW':
+            state=3
+        no, word, pos_tag, ne_tag = line
+        if state==0 and no=='0' and re.match(r'\w{3}[\d\.]+',word):
+            state=1
+            docprefix=word[:3]
+            result.append('DOCNO')
+        elif state==1 and re.match(r'\d{4}-\d{2}-\d{2}|\d{2}:\d{2}:\d{2}',word):
+            result.append('DATETIME')
+        elif state==1:
+            result.append('TYPE')
+        elif state==2:
+            result.append('HEADER')
+        elif state==3:
+            result.append('SLUG')
+        elif state==4:
+            result.append('HL')
+        else:
+            result.append('TXT')
+    return result
+
+
+        
 
 def regex_feature(regex,exact=True):
     if exact:

@@ -1,6 +1,7 @@
 import re
 import nltk
-from feature_functions import get_feature_functions_list
+from feature_functions import get_local_feature_functions,get_global_feature_functions
+
 class FeatureExtraction(object):
     def __init__(self,raw_flag=0):
         self.data = []
@@ -22,36 +23,37 @@ class FeatureExtraction(object):
                 match = re.match('(.*)\t(.*)\t(.*)\t(.*)\n',line)
                 if (match != None):
                     self.data.append(match.groups())
+        else:
+            self.data.append(None)
 
     def feature_extraction(self):
         if ( self.data == [] ): return
         else:
-            feat_func_list = get_feature_functions_list()
-            self.feat_length += len(feat_func_list)
-            for line in self.data:
-                if self.raw_flag:
-                    self.feat.append(  [line[0],line[1],line[2]]\
-                                     + [func(line) for func in feat_func_list])
+            local_ffunc_list = get_local_feature_functions()
+            global_ffunc_list = get_global_feature_functions()
+            global_features=[]
+            for func in global_ffunc_list:
+                gf_list=func(self.data)
+                if len(gf_list) != len(self.data):
+                    print "Error result of" + str(func) + "returned inconsistent values"
+                global_features.append(gf_list)
+            for index,line in enumerate(self.data):
+                if line==None:
+                    self.feat.append(None)
                 else:
-                    self.feat.append(  [line[0],line[1],line[2]]\
-                                     + [func(line) for func in feat_func_list]
-                                     + [line[-1]])            
+                    self.feat.append(  [line[0],line[1],line[2]] \
+                                     + [str(func(line)) for func in local_ffunc_list] \
+                                     + [global_feature[index] for global_feature in global_features] \
+                                     + ([] if self.raw_flag else [line[-1]]))
+
 
     def output_feat(self,filename):
         with open(filename,'w') as output_file:
-            flag = 1
             for line in self.feat:
-                i = 0
-                for feat in line:
-                    i += 1
-                    if flag : flag = 0
-                    else:
-                        if (i == 1 and feat == '0'): output_file.write('\n')
-                    output_file.write(str(feat))
-                    if (i != self.feat_length):
-                        output_file.write('\t')
-                    else:
-                        output_file.write('\n')
+                if line==None:
+                    output_file.write('\n')
+                else:
+                    output_file.write('\t'.join(line) + '\n')
      
 if __name__ == '__main__':
     fe = FeatureExtraction()
