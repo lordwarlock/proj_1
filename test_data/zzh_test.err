@@ -1,64 +1,62 @@
-Judge N. Sanders
-B-PER O
-N. Sanders Sauls
-I-PER O
-Sanders Sauls of
-I-PER O
 : Bush ;
 B-PER O
 letting GE help
 B-ORG O
 . GE posts
 B-ORG O
-between Florida and
+, Mich .
 B-GPE O
-both Stremlow and
-B-PER O
-and Larson already
-B-PER O
+of Detroit ends
+B-GPE O
 's Board of
 B-ORG O
 Board of Trustees
 I-ORG O
 of Trustees _
 I-ORG O
-_ Stremlow as
-B-PER O
 of Gibson's Hardware
 B-ORG O
-left Stremlow the
-B-PER O
-for Larson .
-B-PER O
+Gibson's Hardware Store
+I-ORG O
+Hardware Store ,
+I-ORG O
+.'' Fife Lake
+B-GPE O
+Fife Lake came
+I-GPE O
+the Sugar Bowl
+B-ORG O
+Sugar Bowl Restaurant
+I-ORG O
+Bowl Restaurant .
+I-ORG O
 The board of
 B-ORG O
 board of canvassers
 I-ORG O
 of canvassers ,
 I-ORG O
-. Gresser entered
-B-PER O
 the U.S. Chess
 B-ORG O
-U.S. Chess Hall
-I-ORG O
-Chess Hall of
-I-ORG O
 Hall of Fame
 I-ORG O
-. Gresser studied
+When David Cone
 B-PER O
-the American School
+David Cone heard
+I-PER O
+the Kansas City
 B-ORG O
-American School of
+Kansas City Royals
 I-ORG O
-School of Classical
-I-ORG O
-of Classical Studies
-I-ORG O
-Classical Studies in
+City Royals .
 I-ORG O
 the Royals .
+B-ORG O
+for Kansas City
+B-ORG O
+Kansas City .
+I-ORG O
+the Royals and
 B-ORG O
 and Baltimore Orioles
 B-ORG O
@@ -66,14 +64,12 @@ Baltimore Orioles are
 I-ORG O
 by Cnet.com .
 B-ORG O
-site Premier Solutions
-B-ORG O
-Premier Solutions ,
-I-ORG O
-, Rock the
-B-ORG O
 Rock the Vote
 I-ORG O
+the Vote ,
+I-ORG O
+replacing Garth Ancier
+B-PER O
 Garth Ancier ,
 I-PER O
 replace Zucker at
@@ -88,26 +84,16 @@ B-ORG O
 B-ORG O
 `` Today .''
 B-ORG O
-.'' Ancier was
-B-PER O
-. Ancier was
-B-PER O
-from Wright last
-B-PER O
-the WB Network
-B-ORG O
-WB Network ,
-I-ORG O
 ; BOSTON _
 B-GPE O
-at Emory University
+to Massachusetts General
 B-ORG O
-Emory University School
+Massachusetts General Hospital
 I-ORG O
-University School of
+General Hospital ,
 I-ORG O
-School of Medicine
-I-ORG O
+; ROME _
+B-GPE O
 the Vatican with
 B-FAC O
 Bishop Egon Kapellari
@@ -128,26 +114,14 @@ B-FAC O
 B-PER O
 in Venice earlier
 B-GPE O
-on Italy 's
-B-GPE O
-Chancellor Wolfgang Schuessel
-B-PER O
-Wolfgang Schuessel of
-I-PER O
-. Italy is
-B-GPE O
 the South might
 B-LOC O
-into Burbank or
-B-FAC O
 use Westchester County
 B-FAC O
 Westchester County Airport
 I-FAC O
 County Airport instead
 I-FAC O
-of JFK in
-B-FAC O
 : Aviation Consumer
 B-ORG O
 Aviation Consumer Protection
@@ -176,15 +150,13 @@ B-ORG O
 B-ORG O
 Moet Hennessy Louis
 I-ORG O
-like Fendi were
-B-ORG O
-, LVMH purchased
-B-ORG O
+Hennessy Louis Vuitton
+I-ORG O
+Louis Vuitton ,
+I-ORG O
 if LVMH enters
 B-ORG O
-acquire DKI within
-B-ORG O
-think LVMH is
+-based LVMH ,
 B-ORG O
 to Idol if
 B-PER O
@@ -194,24 +166,22 @@ with Gabrielle studio
 B-ORG O
 Gabrielle studio ,
 I-ORG O
-and Weiss $25
-B-PER O
 If LVMH succeeds
-B-ORG O
-whether LVMH is
 B-ORG O
 the U.S. ''
 B-GPE O
-. Idol calls
-B-PER O
+'' Donna Karan
+B-ORG O
+Donna Karan International
+I-ORG O
+Karan International gets
+I-ORG O
 ; TORONTO _
 B-GPE O
 Although C.I. Fund
 B-ORG O
 C.I. Fund 's
 I-ORG O
-. AIC agreed
-B-ORG O
 powerful Caisse de
 B-ORG O
 Caisse de Depot
@@ -224,13 +194,19 @@ et Placement du
 I-ORG O
 Placement du Quebec
 I-ORG O
-. Investors Group
+the American Express
 B-ORG O
-Investors Group of
+American Express Co
 I-ORG O
-that C.I. Fund
+Express Co .
+I-ORG O
+for MacKenzie along
 B-ORG O
-C.I. Fund had
+the Caisse de
+B-ORG O
+Caisse de Depot
+I-ORG O
+de Depot .
 I-ORG O
 by Amvescap PLC
 B-ORG O
@@ -238,10 +214,6 @@ Amvescap PLC of
 I-ORG O
 ; MIAMI _
 B-GPE O
-, Jean-Bertrand Aristide
-B-PER O
-Jean-Bertrand Aristide ,
-I-PER O
 the Organization of
 B-ORG O
 Organization of American
@@ -252,30 +224,20 @@ American States monitor
 I-ORG O
 press Aristide after
 B-PER O
+or Ali ,
+B-PER O
 the Penguins Wednesday
 B-ORG O
-the NHL into
-B-ORG O
-Can Lemieux produce
-B-PER O
 the Penguins falter
 B-ORG O
 the Meadowlands on
 B-FAC O
 expansion Blue Jackets
 B-ORG O
-Blue Jackets ,
-I-ORG O
 about Lemieux every
 B-PER O
-the Igloo .
-B-FAC O
 about Mario ?''
 B-PER O
-the Pittsburgh Penguins
-B-ORG O
-Pittsburgh Penguins have
-I-ORG O
 Committee for the
 I-ORG O
 for the Study
@@ -286,25 +248,33 @@ Study of the
 I-ORG O
 of the American
 I-ORG O
-for Gore were
-B-PER O
+the American Electorate
+I-ORG O
+American Electorate ,
+I-ORG O
 a Washington, D.C.
 B-GPE O
 Washington, D.C. ,
 I-GPE O
-in Congress .
-B-ORG O
 . Gore won
 B-PER O
 won New York
 B-GPE O
 New York state
 I-GPE O
-carried California in
+. Alfie Charles
+B-PER O
+Alfie Charles ,
+I-PER O
+; SEATTLE _
 B-GPE O
 of American Zoo
 B-ORG O
 American Zoo and
 I-ORG O
 Zoo and Aquarium
+I-ORG O
+and Aquarium Association
+I-ORG O
+Aquarium Association .
 I-ORG O

@@ -25,9 +25,13 @@ def feat_cap_period(data):
             per_flag = 1
     return cap_flag*per_flag
 def get_feature_functions_list():
+            #3         4             5              6            7
     return [up_case,feat_first_cap,feat_first_word,first_name,last_name,\
+            #8           9      10
             org_name,loc_name,misc_name,\
+            #11              12         13
             feat_cap_period,per_name,no_lower_case,\
+            #14
             brown_cluster]
 
 def csv_extract(file,column=0,func=lambda x:str.upper(x),separator='\s+'):
@@ -95,9 +99,8 @@ def up_case(data):
 def get_cluster_list(file):
     result = dict()
     with open(file,'r') as f:
-        for line in file:
+        for line in f:
             data = line.split('\t')
-            if (len(data)<2): print data
             if(data[1] in result) : print 'Cluster Dup Error\n'
             result[data[1]] = data[0]
     return result
