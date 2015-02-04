@@ -34,6 +34,21 @@ def get_feature_functions_list():
             #14
             brown_cluster]
 
+def regex_feature(regex,exact=True):
+    if exact:
+        return lambda (data) : re.match(regex,data[0]) != None
+    else:
+        return lambda (data) : re.search(regex,data[0]) != None
+
+f_allcap_peried=regex_feature("[A-Z]+\.")
+f_twod=regex_feature(r"\d{2}")
+f_fourd=regex_feature(r"\d{4}")
+f_onecap=regex_feature(r"[A-Z]")
+f_digit_slash=regex_feature(r"[\d\\]+")
+f_dollar=regex_feature(r"\$")
+f_percent=regex_feature(r"%")
+
+
 def csv_extract(file,column=0,func=lambda x:str.upper(x),separator='\s+'):
     result=set()
     with open(file) as f:
