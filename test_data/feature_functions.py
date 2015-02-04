@@ -27,7 +27,8 @@ def feat_cap_period(data):
 def get_feature_functions_list():
     return [up_case,feat_first_cap,feat_first_word,first_name,last_name,\
             org_name,loc_name,misc_name,\
-            feat_cap_period,per_name,no_lower_case]
+            feat_cap_period,per_name,no_lower_case,\
+            brown_cluster]
 
 def csv_extract(file,column=0,func=lambda x:str.upper(x),separator='\s+'):
     result=set()
@@ -90,3 +91,18 @@ def no_lower_case(data):
 def up_case(data):
     no, word, pos_tag, ne_tag = data
     return word.upper()
+
+def get_cluster_list(file):
+    result = dict()
+    with open(file,'r') as f:
+        for line in file:
+            data = line.split('\t')
+            if (len(data)<2): print data
+            if(data[1] in result) : print 'Cluster Dup Error\n'
+            result[data[1]] = data[0]
+    return result
+
+cluster_list = get_cluster_list('cluster_data')
+def brown_cluster(data):
+    no, word, pos_tag, ne_tag = data
+    return cluster_list[word]
