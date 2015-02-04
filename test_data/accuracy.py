@@ -1,4 +1,4 @@
-def recall(gold,result):
+def recall(gold,result,note):
     correct_g = 0.0
     total_BI_g = 0.0
     for i in range(len(gold)):
@@ -12,7 +12,7 @@ def recall(gold,result):
                 pass
     print correct_g
     print total_BI_g
-    print 'recall:',correct_g/total_BI_g
+    print mode,correct_g/total_BI_g
     return correct_g/total_BI_g
 
 def accuracy(gold_filename,rslt_filename):
@@ -39,8 +39,8 @@ def accuracy(gold_filename,rslt_filename):
         result.append( data[-1] )
 
 
-    r_score = recall(gold,result)
-    p_score = recall(result,gold)
+    r_score = recall(gold,result,'recall')
+    p_score = recall(result,gold,'precision')
     print 'f-score', 2*r_score*p_score/(r_score+p_score)
     correct_g = 0.0
     total_BI_g = 0.0

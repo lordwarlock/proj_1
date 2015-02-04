@@ -1,12 +1,16 @@
+why Gore needed
+B-PER O
 : Bush ;
 B-PER O
 letting GE help
 B-ORG O
 . GE posts
 B-ORG O
+. GE will
+B-ORG O
 , Mich .
 B-GPE O
-of Detroit ends
+between Florida and
 B-GPE O
 's Board of
 B-ORG O
@@ -36,14 +40,14 @@ board of canvassers
 I-ORG O
 of canvassers ,
 I-ORG O
+. Gresser entered
+B-PER O
 the U.S. Chess
 B-ORG O
 Hall of Fame
 I-ORG O
-When David Cone
+. Gresser studied
 B-PER O
-David Cone heard
-I-PER O
 the Kansas City
 B-ORG O
 Kansas City Royals
@@ -62,6 +66,8 @@ and Baltimore Orioles
 B-ORG O
 Baltimore Orioles are
 I-ORG O
+from Creditcards.com ,
+B-ORG O
 by Cnet.com .
 B-ORG O
 Rock the Vote
@@ -84,44 +90,30 @@ B-ORG O
 B-ORG O
 `` Today .''
 B-ORG O
+.'' Ancier was
+B-PER O
+. Ancier had
+B-PER O
+. Ancier was
+B-PER O
+. Wright questioned
+B-PER O
+. Ancier had
+B-PER O
 ; BOSTON _
-B-GPE O
-to Massachusetts General
-B-ORG O
-Massachusetts General Hospital
-I-ORG O
-General Hospital ,
-I-ORG O
-; ROME _
 B-GPE O
 the Vatican with
 B-FAC O
-Bishop Egon Kapellari
-B-PER O
-Egon Kapellari of
-I-PER O
 of Carinthia spoke
 B-GPE O
-across St. Peter's
-B-FAC O
-St. Peter's Square
-I-FAC O
-Peter's Square to
-I-FAC O
 the Vatican from
 B-FAC O
-`` Haider ?
-B-PER O
 in Venice earlier
 B-GPE O
 the South might
 B-LOC O
-use Westchester County
+into Burbank or
 B-FAC O
-Westchester County Airport
-I-FAC O
-County Airport instead
-I-FAC O
 : Aviation Consumer
 B-ORG O
 Aviation Consumer Protection
@@ -146,34 +138,36 @@ St. S.W. Washington
 I-LOC O
 conglomerate LVMH -
 B-ORG O
-- Moet Hennessy
+Karan International for
+I-ORG O
+like Fendi were
 B-ORG O
-Moet Hennessy Louis
-I-ORG O
-Hennessy Louis Vuitton
-I-ORG O
-Louis Vuitton ,
-I-ORG O
+, LVMH purchased
+B-ORG O
 if LVMH enters
+B-ORG O
+acquire DKI within
 B-ORG O
 -based LVMH ,
 B-ORG O
 to Idol if
 B-PER O
+Karan International and
+I-ORG O
 and Gabrielle merge
 B-ORG O
 with Gabrielle studio
 B-ORG O
 Gabrielle studio ,
 I-ORG O
+Karan International paid
+I-ORG O
 If LVMH succeeds
 B-ORG O
+Karan International and
+I-ORG O
 the U.S. ''
 B-GPE O
-'' Donna Karan
-B-ORG O
-Donna Karan International
-I-ORG O
 Karan International gets
 I-ORG O
 ; TORONTO _
@@ -182,6 +176,12 @@ Although C.I. Fund
 B-ORG O
 C.I. Fund 's
 I-ORG O
+. C.I. Fund
+B-ORG O
+C.I. Fund was
+I-ORG O
+. AIC agreed
+B-ORG O
 powerful Caisse de
 B-ORG O
 Caisse de Depot
@@ -194,11 +194,9 @@ et Placement du
 I-ORG O
 Placement du Quebec
 I-ORG O
-the American Express
+, C.I. Fund
 B-ORG O
-American Express Co
-I-ORG O
-Express Co .
+C.I. Fund requested
 I-ORG O
 for MacKenzie along
 B-ORG O
@@ -207,6 +205,10 @@ B-ORG O
 Caisse de Depot
 I-ORG O
 de Depot .
+I-ORG O
+, C.I. Fund
+B-ORG O
+C.I. Fund withdrew
 I-ORG O
 by Amvescap PLC
 B-ORG O
@@ -218,15 +220,13 @@ the Organization of
 B-ORG O
 Organization of American
 I-ORG O
-of American States
-I-ORG O
-American States monitor
-I-ORG O
 press Aristide after
 B-PER O
 or Ali ,
 B-PER O
 the Penguins Wednesday
+B-ORG O
+the NHL into
 B-ORG O
 the Penguins falter
 B-ORG O
@@ -234,10 +234,14 @@ the Meadowlands on
 B-FAC O
 expansion Blue Jackets
 B-ORG O
-about Lemieux every
-B-PER O
 about Mario ?''
 B-PER O
+the Electoral College
+B-PER O
+Electoral College sealed
+I-PER O
+the Committee for
+B-ORG O
 Committee for the
 I-ORG O
 for the Study
@@ -252,20 +256,18 @@ the American Electorate
 I-ORG O
 American Electorate ,
 I-ORG O
+the White House
+B-PER O
+White House because
+I-PER O
 a Washington, D.C.
 B-GPE O
 Washington, D.C. ,
 I-GPE O
-. Gore won
-B-PER O
 won New York
 B-GPE O
 New York state
 I-GPE O
-. Alfie Charles
-B-PER O
-Alfie Charles ,
-I-PER O
 ; SEATTLE _
 B-GPE O
 of American Zoo
@@ -274,7 +276,7 @@ American Zoo and
 I-ORG O
 Zoo and Aquarium
 I-ORG O
-and Aquarium Association
-I-ORG O
-Aquarium Association .
+the Oregon Zoo
+B-ORG O
+Oregon Zoo in
 I-ORG O
