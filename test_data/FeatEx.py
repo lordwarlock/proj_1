@@ -1,6 +1,6 @@
 import re
 import nltk
-from feature_functions import get_local_feature_functions,get_global_feature_functions
+from feature_functions import get_local_feature_functions,get_global_feature_functions,gf_zone
 
 class FeatureExtraction(object):
     def __init__(self,raw_flag=0):
@@ -32,8 +32,10 @@ class FeatureExtraction(object):
             local_ffunc_list = get_local_feature_functions()
             global_ffunc_list = get_global_feature_functions()
             global_features=[]
+            f_zone,d_range=gf_zone(self.data)
+            global_features.append(f_zone)
             for func in global_ffunc_list:
-                gf_list=func(self.data)
+                gf_list=func(self.data,d_range)
                 if len(gf_list) != len(self.data):
                     print "Error result of" + str(func) + "returned inconsistent values"
                 global_features.append(gf_list)
@@ -43,7 +45,7 @@ class FeatureExtraction(object):
                 else:
                     self.feat.append(  [line[0],line[1],line[2]] \
                                      + [str(func(line)) for func in local_ffunc_list] \
-                                     + [global_feature[index] for global_feature in global_features] \
+                                     + [str(global_feature[index]) for global_feature in global_features] \
                                      + ([] if self.raw_flag else [line[-1]]))
 
 

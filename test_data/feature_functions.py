@@ -1,4 +1,6 @@
 import re
+from nltk.corpus import wordnet as wn
+
 def is_cap(char):
     if (char >= 'A' and char <= 'Z'):
         return 1
@@ -25,6 +27,27 @@ def feat_cap_period(data):
             per_flag = 1
     return cap_flag*per_flag
 
+
+def regex_feature(regex,exact=True):
+    if exact:
+        return lambda (data) : re.match(regex,data[0]) != None
+    else:
+        return lambda (data) : re.search(regex,data[0]) != None
+
+
+f_allcap_peried=regex_feature("[A-Z]+\.")
+f_twod=regex_feature(r"\d{2}")
+f_fourd=regex_feature(r"\d{4}")
+f_onecap=regex_feature(r"[A-Z]")
+f_digit_slash=regex_feature(r"[\d\\]+")
+f_dollar=regex_feature(r"\$")
+f_percent=regex_feature(r"%")
+
+
+def get_global_feature_functions():
+    return [gf_soic,gf_icoc]
+
+
 def get_local_feature_functions():
             #3         4             5              6            7
     return [up_case,feat_first_cap,feat_first_word,first_name,last_name,\
@@ -34,17 +57,48 @@ def get_local_feature_functions():
             feat_cap_period,per_name,no_lower_case,\
             #14
             brown_cluster]
+
+
+def f_oov(data):
+    no, word, pos_tag, ne_tag = data
+    set=wn.synset(str.lower(word))
+
+def token_frequency(tokens,ignorecase=False):
+    dict={}
+    for token in tokens:
+        if token==None:
+            continue
+        else:
+            word=token[1]
+            if ignorecase:
+                word=str.lower(word)
+            dict[word]=dict.get(word,0)+1
+    return dict
+
+def gf_icoc(data,list):
+    result=get_default_list(data)
+    for start,end in list:
+        capset=set()
+        for i in range(start,end):
+            if data[i]==None:
+                continue
+            elif data[i][0]!='0' and feat_first_cap(data[i]):
+                capset.add(data[i][1])
+        for i in range(start,end):
+            if data[i]==None:
+                continue
+            elif data[i][0]=='0' and feat_first_cap(data[i]) and data[i][1] in capset:
+                result[i]=True
+    return result
             
 def enum(*sequential, **named):
     enums = dict(zip(sequential, range(len(sequential))), **named)
     return type('Enum', (), enums)
 
-def get_global_feature_functions():
-    return [gf_zone]
-
 def gf_zone(data):
     state=0
     result=[]
+    ranges=[]
     docprefix=""
     for line in data:
         if line==None:
@@ -71,24 +125,38 @@ def gf_zone(data):
             result.append('HL')
         else:
             result.append('TXT')
+    prevstate="START"
+
+    for i,tag in enumerate(result + ["END"]):
+        if tag=="TXT" and prevstate != "TXT":
+            d_start=i
+        elif prevstate == "TXT" and tag!="TXT" and tag!="":
+            ranges.append((d_start,i))
+        if tag!="":
+            prevstate=tag
+
+    return result,ranges
+
+def gf_soic(data,list):
+    result=get_default_list(data)
+    for start,end in list:
+        s_soic=-1
+        for i in range(start,end):
+            if data[i]==None:
+                s_soic=-1
+                continue
+            if feat_first_cap(data[i]):
+                if s_soic==-1:
+                    s_soic=i
+            else:
+                if s_soic!=-1 and i-s_soic > 1:
+                    for j in range(s_soic,i):
+                        result[j]=True
+                s_soic=-1
     return result
 
-
-        
-
-def regex_feature(regex,exact=True):
-    if exact:
-        return lambda (data) : re.match(regex,data[0]) != None
-    else:
-        return lambda (data) : re.search(regex,data[0]) != None
-
-f_allcap_peried=regex_feature("[A-Z]+\.")
-f_twod=regex_feature(r"\d{2}")
-f_fourd=regex_feature(r"\d{4}")
-f_onecap=regex_feature(r"[A-Z]")
-f_digit_slash=regex_feature(r"[\d\\]+")
-f_dollar=regex_feature(r"\$")
-f_percent=regex_feature(r"%")
+def get_default_list(data):
+    return [False] * len(data)
 
 
 def csv_extract(file,column=0,func=lambda x:str.upper(x),separator='\s+'):
