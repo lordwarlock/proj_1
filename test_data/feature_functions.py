@@ -56,6 +56,7 @@ def get_local_feature_functions():
             #11              12         13
             feat_cap_period,per_name,no_lower_case,\
             #14
+<<<<<<< Updated upstream
             brown_cluster]
 
 
@@ -155,8 +156,30 @@ def gf_soic(data,list):
                 s_soic=-1
     return result
 
+<<<<<<< HEAD
 def get_default_list(data):
     return [False] * len(data)
+=======
+
+        
+=======
+            brown_cluster, f_allcap]
+>>>>>>> Stashed changes
+
+def regex_feature(regex,exact=True):
+    if exact:
+        return lambda (data) : re.match(regex,data[0]) != None
+    else:
+        return lambda (data) : re.search(regex,data[0]) != None
+
+f_allcap_peried=regex_feature("[A-Z]+\.")
+f_twod=regex_feature(r"\d{2}")
+f_fourd=regex_feature(r"\d{4}")
+f_onecap=regex_feature(r"[A-Z]")
+f_digit_slash=regex_feature(r"[\d\\]+")
+f_dollar=regex_feature(r"\$")
+f_percent=regex_feature(r"%")
+>>>>>>> origin/master
 
 
 def csv_extract(file,column=0,func=lambda x:str.upper(x),separator='\s+'):

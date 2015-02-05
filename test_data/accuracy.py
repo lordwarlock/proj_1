@@ -15,11 +15,11 @@ def recall(gold,result,note):
     print note,correct_g/total_BI_g
     return correct_g/total_BI_g
 
-def accuracy(gold_filename,rslt_filename):
+def accuracy(gold_filename,rslt_filename,origin_gold):
     err_file = open('zzh_test.err','w')
     gold_file = open(gold_filename,'r')
     rslt_file = open(rslt_filename,'r')
-    word_file = open('dev.gold','r')
+    word_file = open(origin_gold,'r')
     word = []
     gold = []
     result = []
@@ -77,4 +77,4 @@ def accuracy(gold_filename,rslt_filename):
     print total_BI_g
     #print correct_g/total_BI_g
 if __name__ == '__main__':
-    accuracy('zzh_test.gold','zzh_test.result')
+    accuracy('zzh_test.gold','zzh_test.result','./project1-test/test.gold')
