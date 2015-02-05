@@ -12,3 +12,4 @@ def preprocess(file,mode):
 if __name__ == '__main__':
     preprocess('train.gold','w')
     preprocess('dev.gold','a')
+    preprocess('./project1-test/test.gold','a')
