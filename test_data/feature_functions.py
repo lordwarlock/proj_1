@@ -55,8 +55,8 @@ def get_local_feature_functions():
             org_name,loc_name,misc_name,\
             #11              12         13
             feat_cap_period,per_name,no_lower_case,\
-            #14
-            brown_cluster]
+            #14             15
+            brown_cluster,brown_cluster_100]
 
 
 def f_oov(data):
@@ -169,7 +169,6 @@ def gf_soic(data,list):
 def get_default_list(data):
     return [False] * len(data)
 
-
 def regex_feature(regex,exact=True):
     if exact:
         return lambda (data) : re.match(regex,data[0]) != None
@@ -183,6 +182,7 @@ f_onecap=regex_feature(r"[A-Z]")
 f_digit_slash=regex_feature(r"[\d\\]+")
 f_dollar=regex_feature(r"\$")
 f_percent=regex_feature(r"%")
+
 
 
 def csv_extract(file,column=0,func=lambda x:str.upper(x),separator='\s+'):
@@ -256,7 +256,23 @@ def get_cluster_list(file):
             result[data[1]] = data[0]
     return result
 
+def get_partial_cluster(file,offset):
+    result = dict()
+    with open(file,'r') as f:
+        for line in f:
+            data = line.split('\t')
+            if(data[1] in result) : print 'Cluster Dup Error\n'
+            result[data[1]] = data[0][:offset]
+    return result
+
 cluster_list = get_cluster_list('cluster_data')
+cluster_list_100 = get_cluster_list('cluster_200')
+
 def brown_cluster(data):
     no, word, pos_tag, ne_tag = data
     return cluster_list[word]
+
+cluster_list_4 = get_partial_cluster('cluster_data',4)
+def brown_cluster_100(data):
+    no, word, pos_tag, ne_tag = data
+    return cluster_list_100[word]
