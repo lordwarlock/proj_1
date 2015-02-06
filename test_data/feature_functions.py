@@ -30,9 +30,9 @@ def feat_cap_period(data):
 
 def regex_feature(regex,exact=True):
     if exact:
-        return lambda (data) : re.match(regex,data[0]) != None
+        return lambda (data) : re.match(regex,data[1]) != None and re.match(regex,data[1]).group(0) == data[1]
     else:
-        return lambda (data) : re.search(regex,data[0]) != None
+        return lambda (data) : re.search(regex,data[1]) != None
 
 
 f_allcap_peried=regex_feature("[A-Z]+\.")
@@ -45,7 +45,7 @@ f_percent=regex_feature(r"%")
 
 
 def get_global_feature_functions():
-    return [gf_soic,gf_icoc]
+    return [gf_soic,gf_icoc,gf_uniq]
 
 
 def get_local_feature_functions():
@@ -56,7 +56,6 @@ def get_local_feature_functions():
             #11              12         13
             feat_cap_period,per_name,no_lower_case,\
             #14
-<<<<<<< Updated upstream
             brown_cluster]
 
 
@@ -89,6 +88,17 @@ def gf_icoc(data,list):
             if data[i]==None:
                 continue
             elif data[i][0]=='0' and feat_first_cap(data[i]) and data[i][1] in capset:
+                result[i]=True
+    return result
+
+def gf_uniq(data,list):
+    result=get_default_list(data)
+    for start,end in list:
+        freq=token_frequency(data[start:end])
+        for i in range(start,end):
+            if data[i]==None:
+                continue
+            elif freq.get(data[i][1],0) !=0:
                 result[i]=True
     return result
             
@@ -156,15 +166,9 @@ def gf_soic(data,list):
                 s_soic=-1
     return result
 
-<<<<<<< HEAD
 def get_default_list(data):
     return [False] * len(data)
-=======
 
-        
-=======
-            brown_cluster, f_allcap]
->>>>>>> Stashed changes
 
 def regex_feature(regex,exact=True):
     if exact:
@@ -179,7 +183,6 @@ f_onecap=regex_feature(r"[A-Z]")
 f_digit_slash=regex_feature(r"[\d\\]+")
 f_dollar=regex_feature(r"\$")
 f_percent=regex_feature(r"%")
->>>>>>> origin/master
 
 
 def csv_extract(file,column=0,func=lambda x:str.upper(x),separator='\s+'):
